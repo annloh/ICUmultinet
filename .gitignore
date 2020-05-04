@@ -8,6 +8,7 @@
 
 # R data files
 *.rds
+*.RDS
 
 # User-specific files
 .Ruserdata
@@ -16,7 +17,7 @@
 *-Ex.R
 
 # Output files from R CMD build
-/*.tar.gz
+*.tar.gz
 
 # Output files from R CMD check
 /*.Rcheck/
@@ -74,10 +75,10 @@ rsconnect/
 *.lzo
 *.lzs
 
-# You may or may not also want to exclude teh following non-text outputs
-# *.ps
-# *.eps
-# *.pdf
+# You may or may not also want to exclude the following non-text outputs
+*.ps
+*.eps
+*.pdf
 
 ## Datafiles related ignores
 
@@ -86,3 +87,10 @@ rsconnect/
 *.csv
 *.dat
 .Rproj.user
+
+## Anything in folders called tmp, deprecated, archive, or dump
+tmp/
+deprecated/
+archive/
+dump/
+

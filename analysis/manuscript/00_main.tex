@@ -1,0 +1,1183 @@
+\documentclass[a4paper,12pt]{article} % change doc to man for apa formatted manuscript
+
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[backend=biber, style=apa]{biblatex}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\usepackage[toc]{appendix} %For making appendix appear in toc
+	\renewcommand{\appendixname}{Supplement} %Rename Appendix to Supplement
+	\renewcommand{\appendixtocname}{Supplement}
+
+\usepackage{caption}
+	\captionsetup{format=plain,labelsep=none,singlelinecheck=false, justification=raggedright} %to left align table caption
+	\captionsetup{labelfont=bf, indention=0cm} %Remove colon from Table caption
+
+%stuff from rmarkdown
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage[flushleft, para]{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+
+%\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{hanging} %for sections with hanging indentation
+\usepackage{multicol} %for multicolumnlists
+\usepackage{float} %for placing tables and figures close to the text where they belong
+\usepackage[nopostdot, toc, acronym, nomain, nonumberlist]{glossaries} %for list of abbreviations
+\linespread{1.25} %line spacing might need to be changed to 1.5\linespread{1.25} %line spacing might need to be changed to 1.5
+\usepackage[a4paper,
+			right=4.5cm,
+			left =2.5cm,
+			top=2cm,
+			bottom=2.5cm,
+			includeheadfoot, % text area includes header
+			nofoot,% no space for footer
+			%showframe% show the page layout
+			]{geometry} %page margins
+
+%---Formatting for bibliography
+
+\addbibresource{biblatex_bib.bib}	%for bibliography
+\bibliography{biblatex_bib}			%for bibliography
+
+%---Formatting for list of abbreviation
+
+	\makeglossaries					%for list of abbreviations
+	\setacronymstyle{long-short}	%for list of abbreviations
+	\loadglsentries[acronym]{list_of_abbreviations} %for list of abbreviations
+\setlength{\glsdescwidth}{1\hsize} %decreasing the indentation in the list of abbreviations
+
+%--- changing the title of the table of contents
+\addto\captionsamerican{\renewcommand{\contentsname}{Table of Contents}}
+
+
+%---
+\pagestyle{myheadings} % puts page number top right
+%---
+\usepackage{indentfirst} %makes sure paragraphs are also indented after headings
+%---
+\newcommand{\todo}[1]{\textcolor{red}{TODO: #1}\PackageWarning{TODO:}{#1!}} %add \todo command for todolists
+
+
+\usepackage[hidelinks, linktoc = all]{hyperref} %for adding clickable references without hideous boxes
+
+%######################################################################################################################
+%#### END OF PREAMBLE
+%######################################################################################################################
+
+\usepackage{Sweave}
+\begin{document}
+\input{00_main-concordance}
+
+
+
+
+
+%--- Inputting all the manuscript parts
+\input{00a_titlepage.tex}
+\newpage
+\setcounter{page}{2} % ensure that first page counts as well and numbering starts with 2
+\tableofcontents
+
+\newpage
+
+\listoftables
+
+\newpage
+
+\listoffigures
+
+\newpage
+
+
+\printglossary[title={List of Abbreviations}, type=acronym, style=long]
+
+\newpage
+
+\input{00b_abstract.tex}
+
+\newpage
+
+\input{01_introduction.tex}
+\input{02_theory.tex}
+%3. Methode.
+% Stichprobe. Beschreiben Sie den Stichprobenumfang sowie die zentralen
+% demographischen Merkmale der Teilnehmerinnen und Teilnehmer (u. a. Alter und
+% Geschlecht).
+% Aus der Darstellung der Theorie sollte zudem hervorgegangen sein,
+% warum der vorhandene Datensatz genau diese Personen betrachtet.
+
+% Durchführung.
+% Wie wurde die Untersuchung durchgeführt?
+% Wie sah die Untersuchungssituation aus?
+% Wie wurde die Stichprobe rekrutiert?
+
+% Instrumente. Beschreiben Sie die für Ihre Auswertungen relevanten
+% Instrumente. Berichten Sie Beispielitems, Antwortformate, psychometrische Kennwerte
+% und Ihr Vorgehen bei der Berechnung von Skalen- oder anderweitig aggregierten
+% Kennwerten. Sofern Sie etablierte Skalen genutzt haben, müssen diese nicht
+% gesondert faktoranalytisch geprüft werden. Es genügt hier, die Skalen anhand der
+% Vorgaben der Autoren zu bilden und die entsprechenden Kennwerte (z. B. Mittelwert,
+% Streuung, interne Konsistenz) im Ergebnisteil (s. unten) zu berichten und ggf. im
+% Diskussionsteil (s. unten) zu erörtern.
+
+% Statistische Analysen. In diesem Abschnitt geben Sie einen kurzen
+% Überblick über die von Ihnen gewählten Analysemethoden und
+% begründen Sie Ihre
+% Auswertungsstrategie und die von Ihnen verwendeten statistischen Verfahren.
+% Berichten Sie hier noch keine Ergebnisse, sondern stellen Sie nur kurz die Verfahren
+% und das Vorgehen vor!
+
+% Aus dem Bewertungsschema:
+
+% Stichprobe wird angemessen unter Angabe demographischer Merkmale beschrieben.
+% Die Durchführung ist detailliert und verständlich dokumentiert.
+% Die Instrumente werden vorgestellt unter Angabe von Quellen und Beispielitems.
+% Psychometrische Kennwerte der Messinstrumente werden berichtet.
+% Das Untersuchungsdesign wird transparent beschrieben.
+% Die Konstrukte werden sinnvoll operationalisiert.
+% Alle Untersuchungsvariablen werden transparent definiert.
+% Prozeduren der Datenaufbereitung werden berichtet und ggf. begründet.
+% Auswertungsstrategie wird nachvollziehbar dargelegt, ist angemessen und gut begründet.
+% Der methodische Aufwand bzw. die Komplexität der Analysen ist angemessen.
+
+
+ % !Rnw root = 00_main.Rnw
+
+\section{Methods}
+The data analyzed and presented in this thesis are drawn from the Niedersachsen survey \parencite{bergmann_jugendliche_2017},
+which conducted a large representative student survey among 9th grade students in Lower Saxony, Germany.
+The survey was conducted in spring 2015 by the Criminological Research Institute of Lower Saxony (Kriminologische Forschungsinstitut Niedersachsen - KFN) and is part of a periodically conducted representative survey with the objective of monitoring unrecorded crime.
+Main survey topics are delinquency, and victimization as well as associated risk factors.
+A detailed overview of survey domains can be found in appendix \todo{add appendix reference}.
+The main body of the manuscript only describes the questionnaire parts pertaining to the present research question.
+
+\subsection{Participants and Procedures}
+
+\subsubsection{Sampling Procedure}
+A random sample of \textit{K} = 672 classrooms was drawn from the total of 9th grade classrooms taught in the 2014/2015 school year.
+Sampling was stratified by school type.
+School principals were contacted for recruitment, resulting in \textit{k} = 545 classrooms indicating willingness to participate, which corresponds to a participation rate of 81.1\% on the classroom level.
+Of the \textit{N} = 12,650 students attending the participating classrooms 84.4\% (\textit{n} = 10, 638) filled in the survey.
+Reasons for non-participation can be obtained from the flow-chart in figure \ref{fig:flowchart}.
+
+\begin{figure}[h!]
+	\caption{\label{fig:flowchart}\protect\linebreak[1]\textit{Flow Chart Illustrating  the Sampling Process}}
+		\centering
+	\includegraphics[width=\textwidth]{../figures/flowchart.png}
+	\caption*{\textit{Note.} Figure adapted from \parencite{kliem_factor_2019}.}
+\end{figure}
+
+The survey was modularized, i.e. there were different versions of the survey randomly assigned to the participants.
+The ICU was only part of 1/3 of the distributed survey forms.
+Accordingly, \textit{n} = 4,125 students received a survey version containing this scale.
+The survey was approved by the federal school board of Lower Saxony (Nieders\"achsische Schukbeh\"orde) as well as the Ministry od Education of Lower Saxony (Nieders\"achsisches Kultusministerium).
+Written parental consent was obtained for each student prior to student participation.
+Students were informed, that their participation was entirely voluntary and anonymous.
+Students could refuse participation independent of their parent's consent.
+Students additionally had the option to skip individual questions.
+Further details regarding the sampling procedure can be obtained from \parencite{bergmann_jugendliche_2017}
+
+\subsubsection{Survey Setting}
+The survey was conducted in the classroom setting during school time.
+It was carried out by trained research assistants.
+A research assistant as well as a teacher were present during the survey.
+Their role was to ensure orderly conduct but not to interfere with the students filling in the forms.
+
+
+\subsubsection{Sample Descriptives}
+The final sample for the present analysis consisted of \textit{N} = $3878$ 9th grade students.
+Students age ranged from $13$ to $19$ years with a mean age of \textit{M} = $14.88$ years (\textit{SD} = $0.71$).
+The self-reported gender was $0.49$\% female (\textit{n} = $1992$  individuals) and $48.63$\% male (\textit{n} = $1886$ individuals).
+Participants could not indicate a non-binary option.
+
+\subsection{Measures}
+
+
+\subsubsection{Callous-Unemotional Traits}
+Callous-unemotional traits  were assessed using the German translation of the Inventory of callous unemotional traits \parencite{essau_callous-unemotional_2006}.
+The scale comprises 24 self-report items rated on a 4-point Likert scale ranging from "Not at all true" (0) to "Definitely true" (3).
+The internal consistency (Cronbach’s alpha) for the three subscales of the German version obtained in a similar sample are reported as: $\alpha = .64$ (unemotional),
+$\alpha = .70$ (callousness) and $\alpha = .73$ (uncaring) \parencite{essau_callous-unemotional_2006}. 
+A recent large Meta-Analysis by Cardinale and Marsh \parencite*{cardinale_reliability_2017} confirms acceptable reliability based on a pooled total sample of 27,947
+subjects: $\alpha = .71$ (unemotional), $\alpha = .75$ (callousness) and $\alpha = .80$ (uncaring). 
+These findings are in line with the Cronbach’s alphas found in the present sample:
+$\alpha = .71$ (unemotional),  $\alpha = .72$ (callousness) and  $\alpha = .79$ (uncaring). \todo{check whether these alphas are actually correct}
+
+
+\section{Data Analysis}
+Data analysis was be conducted in the R statistical programming environment \parencite{R} (version 3.6.3). 
+Further information regarding the computational environment as well as documentation of the corresponding analysis 
+code can be obtained from appendix \todo{add reference to appendix}. 
+
+\subsection{Data Processing and Cleaning}
+Data was imported into R from SPSS. 
+ICU items were recoded to comply with the intended original scaling.
+They were furthermore inverted as intended and renamed. 
+%The anti-social behavior items showed a large number of missing value as they were follow-up items to identically worded filter item asking whether the target behavior had ever been excibited.
+%The missing values pertaining to the negation of the filter item where hence recoded to "never".  
+
+\subsection{Missing Data Handling}
+As the present dataset has been used for previous published research we will handle missing data in the same manner to obtain matching completed data.
+The data was imputed using single imputation and predictive mean matching as implemented in the R package \texttt{mice}, \nptextcite{mice}).
+All ICU items as well as age and gender was used to predict the missing values.
+%The additional variables analyzed for the present study will be imputed in a similar manner, i.e. only the ICU items will be used for missing value prediction.
+I have abstained from multiple imputation in the present study as I do not feel that the gain in precision justifies the added layer of complexity.
+The focus of the present study is exploratory rather than confirmatory in nature and hence does not rely on point estimates and their corresponding standard error.
+
+\subsection{Data Preparation for Network Analysis}
+There are several recommendation of how to best prepare data for a network analysis. 
+Especially regarding violations of multivariate-normality.
+As the data was in clear violation of the normality assumption it was transformed using the non-paranormal transformation \parencite{liu_nonparanormal_2009}.
+All items in the present analysis could be characterized as ordinal for which the use of polychoric correlations are recommended whenever analyses are based on correlation matrices.
+Analyses comprising non-transformed correlations were also incorporated in the multi-verse. 
+This corresponds to current findings indicating that the use of polychoric correlations could result in spurious negative edges \parencite{epskamp_estimating_2018}.
+Epskamp and colleagues hence recommend comparing the results obtained using polychoric correlations to those obtained using Spearman correlations.  
+
+Entering items with high topological overlap as nodes to the same network can be problematic.
+The network edges represent partial correlations i.e.~associations between items taking into account all other items in the network.
+Items with a high overlap will make it unlikely that there are any unique associations left to account for.
+We hence searched for potential pairs of redundant nodes, that is nodes that are highly inter-correlated and that correlate to the same degree with other variables.  
+This search was conducted by application of the Hittner method for comparing dependent correlations \parencite{hittner_monte_2003} as implemented in the \texttt{goldbricker()} function from the \texttt{networktools} package \parencite{networktools}.
+This procedure did not indicate any considerable item overlap.
+
+%\subsection{Statistical Analysis}
+
+%Partial correlation networks were fit to a node sets comprising all 24 ICU items.
+%I will refer to the analysis and results corresponding to this node set as "psychometric network" or "ICU network"
+
+%Set (ii) comprises the aggregated ICU sub-scales \textit{"Lack of remorse or guilt"} (callous: \#2, \#5, \#9, \#13, \#16, \#18), 
+%\textit{"Callous lack of empathy"}  (uncaring: \#4, \#8, \#12, \#17, \#21, \#24), 
+%\textit{"Shallow or deficient affect"} (unemotional: \#1, \#6, \#10, \#14, \#19, \#22), 
+%\textit{"Unconcerned about performance"} (careless: \#3, \#7, \#11, \#15, \#20, \#23) as well as measures of bullying behavior.
+%The networks stemming from this node set will be evaluated from a psychological network perspective investigating the unique associations between nodes as well as the roles of certain nodes within the network. The specific parameters that will be interpreted for this purpose are outlined below.
+
+
+\subsection{Descriptive Statistics}
+Descriptives statistics were computed for all demographic variables.
+Basic psychometric scale characteristics were be computed for the ICU scale (item mean, inter-item correlations, item difficulty, item-rest correlations).
+Correlations on subscale level are furthermore reported.
+
+
+\subsection{Network Estimation}
+
+Psychological network analysis is a fairly recent technique with a multitude of current methodological developments.
+To incorporate the effects of several potentially applicable analytical decisions I conducted a multi-verse analysis. 
+Table \ref{tab:decisions} contains an overview of the decisions and their corresponding options which are likely to be justifiable given the data at hand.
+
+\todo{fix table formatting}
+
+\begin{ThreePartTable}
+	\begin{TableNotes}
+		\item \textit{Note.} 
+		 \item MGM = Mixed Graphical Model ; GGM = Gaussian Graphical Model; EBIC~=~extended Bayesian information criterion; CV~=~cross-validation; RIC~=~rotation information criterion; StARS~=~stability approach to regularization selection.
+	\end{TableNotes}
+	\begin{longtabu} to \linewidth {
+			X[4,l]
+			X[4,l]
+			X[4,l]}
+		\caption{\label{tab:decisions}\protect\linebreak[1]
+			\textit{Overview of defensible analytical decisions}} \\
+		\toprule
+		\multicolumn{1}{l}{Decisions} & \multicolumn{1}{l}{Options} & \multicolumn{1}{l}{References}\\
+		\midrule
+					Data transformation            & none; non-paranormal transformation    & \nptextcite{liu_nonparanormal_2009}          \\
+					Network estimation             &                                        &  \\
+					~~Correlation type               & Spearman, polychoric                    &  \nptextcite{epskamp_tutorial_2018}      \\
+					~~Modeling approach              & Mixed Graphical Models (MGM),          &  \nptextcite{mgm}\\
+					                               & Gaussian Graphical Models (GGM)        &  \nptextcite{epskamp_tutorial_2018}         \\
+					~~Sparsity                       & Regularization                        &  \\
+					                               & Correction for multiple testing        & \nptextcite{williams_nonregularized_2019}   \\
+					~~Shrinkage tuning               & EBIC, CV, RIC, StARS                   & \nptextcite{wysocki_penalty_2019}          \\
+					~~EBIC tuning parameter $\gamma$ & 0, 0.25, 0.5                           & \nptextcite{epskamp_tutorial_2018}         \\ 
+		\bottomrule
+\insertTableNotes 
+\end{longtabu}
+\end{ThreePartTable}
+
+		The modeling decisions in table \ref{tab:decisions} above will be combined in as many ways as feasible.
+		However, the current implementation of modeling techniques does not feasibly allow for a combination in a full-factorial way.
+		Specifically, the default functions of the \texttt{bootnet} package  will be used with every reasonable parameter constellation.
+		Figure \ref{fig:multiverse} provides an overview of the implementation of the analytical decisions outlined above. 
+
+\begin{figure}[h!]
+	\caption{\label{fig:multiverse}\protect\linebreak[1]\textit{s}}
+	\centering
+	\includegraphics[width=\linewidth]{../figures/multiverse.png}
+%	\caption*{\textit{Note.} ICU = Inventory of Callous-Unemotional Traits.}
+\end{figure}
+
+		We will now  provide a detailed justification of each step in the analysis process explaining the necessary decisions to be made as well as the options available:
+
+		\paragraph{Data Transformation}
+		Epskamp \parencite*{epskamp_estimating_2018} recommends normalizing variables with a skewed distributions using the non-paranormal transformation \parencite{liu_nonparanormal_2009}.
+		As there are currently no clear guidelines regarding this transformation we will repeat each of the analyses with untransformed variables. %check that
+
+\paragraph{Modeling Approach}
+		The networks can be modeled using either Gaussian Graphical Models (GGM) or Mixed Graphical Models (MGM).
+		GGMs assumes Gaussian data i.e. following a normal distribution.
+		However, given the nature of the variables investigated in the present study such distributions seem unlikely for several nodes.
+		MGMs takes the ordinal nature of the data into account by estimating the node edges using exponential mixed graphical model as introduced by Yang and colleagues \parencite*{yang_mixed_2014}. 
+		We will incorporate both modeling techniques as the 4-point scale underlying the ICU represents the idea of a continuous variable.
+
+		\paragraph{Network Sparsity} To avoid the estimation of spurious edges and thereby overfitting the network to the data and increase the risk of false positives, network edges are often estimated using regularization.
+		Regularization shrinks edges and sets small edges to zero, producing a sparse and parsimonious model.
+		For the estimation of GGM the application of the graphical LASSO (GLASSO) is frequently recommended (a variant of the LASSO applicable to a correlation matrix).
+		Tuning of the shrinkage is commonly achieved choosing the model with the lowest Extended Bayesian Information Criterion (EBIC).
+		This approach is implemented in the \texttt{qgraph} package \parencite{epskamp_qgraph_2012}.
+		The EBIC itself relies on a tuning parameter $\gamma$.
+		This tuning parameter influences the trade-off between including false-positive edges and removing true edges.
+		The hyperparameter $\gamma$ is usually set between zero and 0.5 \parencite{epskamp_tutorial_2018} with 0.5 being the most frequently chosen setting.
+		With a $\gamma$ closer to 0.5, the EBIC will favor a simpler model containing fewer edges.
+		Consequently with a $\gamma$ near zero, the more the EBIC will favor a model with more edges.
+		We will incorporate $\gamma$'s of 0, 0.25 and 0.5 as part of the intended multi-verse analysis.
+
+		However, there is recent methodological work indicating that the EBIC might not be the ideal information criterion for tuning the shrinkage parameter \parencite{wysocki_penalty_2019}.
+		The multiverse analysis will hence also incorporate alternative methods (i.e. RIC, StAR) for determining optimal regularization.
+		These alternative approaches to selecting the shrinkage parameter for a GGM are implemented in the \texttt{huge} package \parencite{huge}.
+		The MGM estimation as implemented in the \texttt{mgm} package \parencite{mgm} regularizes the estimated edges via a LASSO penalty.
+		Here tuning of the penalization can be achieved via EBIC or cross-validation (CV).
+
+		Recent debate \parencite{williams_nonregularized_2019} questions the general need for regularization and argues that these techniques might only be justifiable when in deed a sparse network can be assumed to underly the data.
+		Hence following recent recommendations by Williams and colleagues \parencite{williams_nonregularized_2019} we will also estimate network models without regularization, albeit still controlling for the false-positive rate.
+
+		\subsection{Psychometric Network}
+
+		\paragraph{Edge Estimation}
+		For all primary analyses we will estimate the stability of edges with bootstrapped confidence intervals using the \texttt{bootnet} package \parencite{epskamp_estimating_2018}.
+		The number of bootstrap samples for this and all other bootstrap procedures will be determined by computational feasibility.
+
+		\paragraph{Node Statistics}
+		Node centrality measures (\textit{betweenness centrality}, \textit{closeness centrality} and \textit{node strength}) are traditionally interpreted as the relative influence of a node in the network.
+		More recently the interpretability of closeness centrality and betweenness centrality have been questioned and their use discouraged.
+		Node strength, (which is the sum of all weighted edges of a given node) however, has been found to be akin to factor loadings.
+		It hence offers information whether an item may belong to multiple latent dimensions.
+		The \textit{expected influence centrality} recently suggested by Robinaugh et al. \parencite*{robinaugh_identifying_2016} overcomes some of the shortcomings of other centrality measures and has been found to be strongly associated with observed node influence. 
+		It is computed in the same manner as node strength however maintaining the edge sign. It is hence especially useful in networks where negative edges are present.
+
+		\paragraph{Community Detection}
+		We will use community detection algorithms to assess the dimensionality of the psychometric network.
+		Nodes within an community are more strongly interconnected than they are with nodes from other communities.
+		Various algorithms exist that identify the number of communities (i.e. dimensions) in the network.
+		Unlike edge estimation, where the implementation of different estimation methods for the same set of edges, the application of different community detection algorithm of each of the estimated networks of the multi-verse would result in a very high number of subsets which would need to be interpreted individually. We will hence only implement the spinglas algorithm for community detection in each estimated network.
+
+
+		\paragraph{Bridge Nodes and Within Cluster Centrality}
+		We will  also identify important nodes that may serve as bridges between the communities by computing the \textit{bridge expected influence index} via the \texttt{bridge()} function of the \texttt{networktools} package \parencite{networktools}.
+		Bridge expected influence is the sum of the edge weights connecting a given node to all nodes in the other community or communities \parencite{jones_bridge_2019}.
+		Node Centrality measures can not only be computed with regard to the whole network, but also relative to their community.
+		Following the suggestions of Blanken and colleagues \parencite*{blanken_role_2018} we will analyse the edge weights a given node has within its community (\textit{stabilizing index}). 
+		We will use the four factors corresponding to the LPE specifier for this analysis.
+
+
+%		\subsection{Psychological Network Analysis of CU-Traits Facets and Anti-Social Behavior}
+%		The psychological network analysis comprising the second node set, as outlines above, will compute the same network statistics as outlined for the psychometric analysis apart from any estimates regarding the detection or centrality of communities.
+%
+%		\subsection{Stability and Robustness of Estimates}
+%		We will evaluate the stability of the node metrics by implementing a subset bootstrap procedure as implemented in the \texttt{bootnet} package \parencite{epskamp_estimating_2018}.
+%		We will also calculate the \textit{centrality stability correlation coefficient} (CS-coefficient) which represents the maximum proportion of participants that can be dropped while maintaining 95\% probability that the correlation between centrality metrics from the full data set and the subset data are at least .70.
+
+
+
+
+
+
+%4. Ergebnisse. In diesem Teil werden die Ergebnisse Ihrer Untersuchung 
+%dargestellt und mit Blick auf die Fragestellung ausgewertet. 
+%Gliedern Sie den 
+%Ergebnisteil anhand Ihrer Fragestellungen bzw. Hypothesen und machen Sie diese 
+%Gliederung durch Überschriften deutlich. 
+%Beginnen Sie mit der Darstellung der 
+%deskriptiven Statistiken (z. B. Mittelwerte und Standardabweichungen, Korrelationen 
+%zwischen den untersuchten Variablen). 
+
+%Anschließend berichten Sie die Ergebnisse zu 
+%Ihren Fragestellungen und Hypothesen. Beschreiben Sie detailliert Ihre Datenanalysen 
+%und Ihre Ergebnisse. 
+%Ziehen Sie ein kurzes Fazit hinsichtlich der Ablehnung oder 
+%Beibehaltung der Hypothese, achten Sie aber darauf, dass Sie Ihre Ergebnisse hier 
+%lediglich beschreiben, ohne sie zu interpretieren und Schlussfolgerungen daraus zu 
+%ziehen! 
+
+%Beschreiben Sie die Ergebnisse in der Vergangenheitsform. 
+%Präsentieren Sie Ihre Ergebnisse auch tabellarisch und graphisch. 
+%Achten Sie darauf, dass Sie Tabellen 
+%und Abbildungen nicht überladen. Achten Sie auch darauf, Tabellen und Abbildungen 
+%korrekt zu beschriften. 
+%Die Formatvorschriften für das Berichten statistischer 
+%Kennwerte, zur Ergebnisdarstellung und zur Formatierung von Tabellen und 
+%Abbildungen entnehmen Sie den aktuellen APA-Standards. 
+
+% Aus dem Bewertungsschema
+% Ergebnisteil ist in Bezug auf die Fragestellungen/Hypothesen sinnvoll gegliedert.
+% Relevante vorgeschaltete Analysen werden berichtet (z. B. deskriptive Statistiken).
+% Die Auswertungsverfahren werden benannt und korrekt angewendet. 
+% Es werden Ergebnisse der Verfahren beschrieben, die für die Hypothesentests relevant sind. 
+% Die Ergebnisse werden anhand der statistischen Kennwerte richtig und gut nachvollziehbar dargestellt.    
+% Die Ergebnisse werden in Bezug zu den Hypothesen gesetzt. 
+% Es wird bei der Darstellung der Ergebnisse angemessener Gebrauch von aussagekräftigen Tabellen und Abbildungen gemacht. 
+
+%\section{\thesection. Section Title}
+%\subsection{\thesubsection. Subsection title}
+%\subsubsection{\thesubsubsection. Subsubsection title}
+
+% !Rnw root = 00_main.Rnw
+ 
+\section{Results}
+
+The following section will present the results from the present analyses.
+After an overview of general descriptive statistics the results pertaining to each 
+network analysis are presented separately albeit following a fairly parallel structure.
+
+
+\subsection{Missing Data Analysis}
+Figure \ref{fig:itemwise_missingness} shows the item wise missingness for all variables. 
+Apparent patterns of sequentially missing items (i.e. ICU \#1 to ICU\#10 and ICU\#11 to ICU\#24) largely correspond to
+pages of the questionnaire indicating these are instances of pages having been (accidentally) skipped.
+Item wise missingness ranged from 0.016\% (battery teacher) to 10.39\% (ICU \#19) with a mean of 2.03\% (\textit{SD} = 1.75\%).
+\begin{figure}[h!]
+	\caption{\label{fig:itemwise_missingness}\protect\linebreak[1]\textit{Item wise missingness}}
+	\centering
+	\includegraphics[width=\linewidth, trim = {0.5cm 0cm 0cm 0mm}, clip]{../figures/missingness.pdf}
+	\caption*{\textit{Note.} ICU = Inventory of Callous-Unemotional Traits.}
+\end{figure}
+
+
+\subsection{Descriptive Statistics}
+Table \ref{tab:descriptives} \todo{add table} presents the descriptive statistics on scale level for all scales assessed in the present analyses.
+All descriptives were computed using the imputed data set.
+
+	\begin{ThreePartTable}
+		\begin{TableNotes}
+			\item \textit{Note.} 
+			\item (-) indicates inversely scored items.
+		\end{TableNotes}
+		\begin{longtabu} to \linewidth {>{\raggedright}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X}
+			\caption{\label{tab:icu_itemcharacteristics}\protect\linebreak[1]
+				\textit{Item characteristics for ICU items}}\\
+			\toprule
+			\multicolumn{1}{c}{Item} & \multicolumn{1}{c}{\textit{M}} & \multicolumn{1}{c}{\textit{SD}} & \multicolumn{1}{c}{\textit{Skew}} & \multicolumn{1}{c}{Kurtosis} & \multicolumn{1}{c}{\textit{SE}} & \multicolumn{1}{c}{$r_{it}$}\\
+			\midrule
+			1 (-) & 1.94 & 0.88 & -0.47 & -0.54 & 0.01 & 0.36\\
+			2 & 1.22 & 0.88 & 0.45 & -0.41 & 0.01 & 0.10\\
+			3 (-) & 0.83 & 0.89 & 0.86 & -0.09 & 0.01 & 0.42\\
+			4 & 0.27 & 0.63 & 2.60 & 6.56 & 0.01 & 0.38\\
+			5 (-) & 1.10 & 1.03 & 0.46 & -1.00 & 0.02 & 0.44\\
+			\addlinespace
+			6 & 1.38 & 1.04 & 0.24 & -1.10 & 0.02 & 0.38\\
+			7 & 0.48 & 0.79 & 1.67 & 2.10 & 0.01 & 0.35\\
+			8 (-)& 0.96 & 0.89 & 0.63 & -0.37 & 0.01 & 0.50\\
+			9 & 0.70 & 0.85 & 1.03 & 0.21 & 0.01 & 0.38\\
+			10 & 1.30 & 0.95 & 0.32 & -0.80 & 0.02 & 0.18\\
+			\addlinespace
+			11 & 0.47 & 0.71 & 1.48 & 1.73 & 0.01 & 0.38\\
+			12 & 0.73 & 0.88 & 1.07 & 0.30 & 0.01 & 0.44\\
+			13 (-) & 1.71 & 0.88 & -0.18 & -0.70 & 0.01 & 0.14\\
+			14 (-) & 1.91 & 0.88 & -0.44 & -0.53 & 0.01 & 0.32\\
+			15 (-) & 0.79 & 0.82 & 0.82 & 0.06 & 0.01 & 0.45\\
+			\addlinespace
+			16 (-) & 0.70 & 0.86 & 1.04 & 0.22 & 0.01 & 0.56\\
+			17 (-) & 0.78 & 0.87 & 0.89 & -0.02 & 0.01 & 0.55\\
+			18 & 0.81 & 0.94 & 0.92 & -0.20 & 0.02 & 0.28\\
+			19 (-) & 1.99 & 0.89 & -0.52 & -0.55 & 0.01 & 0.23\\
+			20 & 0.85 & 0.86 & 0.74 & -0.22 & 0.01 & 0.26\\
+			\addlinespace
+			21 & 0.42 & 0.75 & 1.85 & 2.80 & 0.01 & 0.49\\
+			22 & 1.30 & 1.01 & 0.37 & -0.94 & 0.02 & 0.33\\
+			23 (-) & 1.01 & 0.84 & 0.49 & -0.41 & 0.01 & 0.43\\
+			24 (-) & 1.28 & 0.87 & 0.21 & -0.64 & 0.01 & 0.39\\
+			\bottomrule
+			\insertTableNotes
+		\end{longtabu}
+	\end{ThreePartTable}
+
+
+\paragraph{Scale and Item Characteristics}
+Table \ref{tab:icu_itemcharacteristics} \todo{add table} presents scale and item characteristics for the ICU. 
+Pairwise correlations of all constructs assessed in the present analysis are given in table  \todo{add table reference and table}.  
+
+\subsection{Estimation Problems}
+Some models from the multi-verse were not estimable with the current implementation of the \texttt{bootnet} package.
+For the lack of informative error messages the nature of the estimation problems is unknown.
+This concerns multi-verse ID's 21 and 22 for both the psychometric network analysis as well as the psychological network analysis.
+Since the regularization techniques in both of these estimators rely on resampling it is possible that the low prevalence of some items led to 
+zeros which caused the estimation to stop. Other possibilities (at least for the psychological network) might be the estimation of an empty graph i.e. 
+the estimation of all edges to equal zero.
+The final multi-verse hence comprised 24 different estimation procedures.
+  
+\subsection{Psychometric Network Analysis}
+
+\subsubsection{Network Description}
+There was no topological overlap detected for the ICU items. 
+Correspondingly the psychological network analysis included all 24 ICU items as nodes. 
+With 24 nodes in the network the number of possible edges was 300 as $\frac{24 * 25}{2} =300$.
+The number of non-zero estimated edges ranged from $153$ (51\%) (name of analysis). to $276$ (92\%) (name of analysis) \todo{add names of analyses}.
+Mean number of edges was $198.96$ (\textit{SD} = $35.09$.
+The number of negative edges ranged from $26$ to $107$ with a mean of $51.35$ (SD = $22.05$. \todo{add percentages}
+None of the analyses resulted in isolated nodes (i.e. nodes that are not connected to any other node in the network).
+
+\subsubsection{Network Structure}
+
+
+\paragraph{Edge Weights}
+
+Figure \ref{fig:icu_net} shows the network model graph featuring the median edge weights over all implemented estimation models.
+Graphs for each individual network from the multi-verse analysis can be found in appendix \todo{add reference to appendix}.
+Edge width is proportional to the maximum edge which was ... \todo{add edge statistics}
+When interpreting the size of the edge weights it has to be taken into account that partial correlations are usually smaller than
+first-order correlations.
+
+\begin{figure}[h!]
+	\caption{\label{fig:icu_net}\protect\linebreak[1]\textit{Medium ICU Network of all Implemented Estimators}}
+	\centering
+	\includegraphics[width=\linewidth]{../figures/ICU_network.pdf}
+	\caption*{\textit{Note.} Node numbers correspond to ICU item numbers. Colors correspond to subscale membership of the corresponding items.
+	Blue indicates positive edges, red negative ones.}
+\end{figure}
+
+\subsubsection{Node Centrality}
+Figure \ref{fig:icu_node_indices} presents the node expected influence centrality as well as node strength for all nodes in the ICU network.
+
+As for the edge weights the histograms correspond to the bootstrap analyses whereas the points correspond to the point estimates per analysis.
+
+\begin{figure}[h!]
+	\caption{\label{fig:icu_node_indices}\protect\linebreak[1]\textit{ICU Local Node Centrality Indices}}
+	\centering
+	\includegraphics[width=\linewidth]{../figures/node_centrality_icu.pdf}
+	\caption*{\textit{Note.} ICU = Inventory of callous-unemotional traits. Points correspond to medium over all estimated models. Error bars correspond to 2 * medium SD obtained from the bootstrap samples.}
+\end{figure}
+
+
+\paragraph{Community Indices}
+Figure \ref{fig:meso_plot} depicts the meso-level node indices bridge expected influence and the stabilizing index. 
+
+\begin{figure}[h!]
+	\caption{\label{fig:meso_plot}\protect\linebreak[1]\textit{ICU Meso-Level Node Centrality Indices}}
+	\centering
+	\includegraphics[width=\linewidth]{../figures/meso_plot.pdf}
+	\caption*{\textit{Note.} ICU = Inventory of callous-unemotional traits. Points correspond to medium over all estimated models. Error bars correspond to 2 * medium SD obtained from the bootstrap samples.}
+\end{figure}
+
+\subsubsection{Dimensionality}
+\paragraph{Community detection}
+Figure \ref{fig:communities} depicts the detected communities per implemented estimation model.
+In 13 of the 23 different estimation implementations the walktrap algorithm detected two communities.
+These two communities correspond to the sets of positively (\#2, \#4, \#6, \#7, \#9, \#10, \#11, \#12, \#18, \#20, \#21, \#22 ) and negatively (\#1, \#3, \#5, \#8, \#13, \#14, \#15, \#16, \#17, \#19, \#23, \#24) scored items.
+In six cases, three communities were detected. 
+These correspond to the set of positively worded items, as well as the items sets (\#1, \#13, \#14, \#19) and (\#3, \#5, \#8, \#15, \#16, \#17, \#23, \#24).    
+The remaining three estimations detected 5 or 6 communities.
+
+\begin{figure}[h!]
+	\caption{\label{fig:communities}\protect\linebreak[1]\textit{Detected communities (walktrap) for each different network estimation}}
+	\includegraphics[width=0.9\linewidth]{../figures/communities.png}
+	\caption*{\textit{Note.} ICU = Inventory of Callous-Unemotional traits.}
+\end{figure}
+
+
+%\subsection{Psychological network analysis}
+%\subsubsection{Network description}
+%
+%The \texttt{goldbricker()} function indicated topological overlap of the items "I ridiculed a teacher in front of other students." and 
+%"I was very mean to a teacher.". 
+%These items were hence combined to one node (by averaging).
+%
+%Correspondingly the psychological network analysis comprised 12 nodes (4 ICU facets and 8 indicators of anti-social behavior). 
+%With 12 nodes in the network the number of possible edges was 78 as $\frac{12 * 13}{2} =78$.
+%The number of non-zero estimated edges ranged from  (\%) (name of analysis). to  (\%) (name of analysis) \todo{add names of analyses}.
+%Mean number of edges was  (\textit{SD} = .
+%The number of negative edges ranged from  to  with a mean of (SD = . \todo{add percentages}
+%None of the analyses resulted in isolated nodes (i.e. nodes that are not connected to any other node in the network).
+
+
+% Example figure to copy & paste
+
+%\begin{figure}[h!]
+%	\caption{\label{fig:}\protect\linebreak[1]\textit{s}}
+%	\centering
+%	\includegraphics[width=\linewidth]{../figures/.pdf}
+%	\caption*{\textit{Note.} ICU = Inventory of Callous-Unemotional Traits.}
+%\end{figure}
+\input{05_discussion.tex}
+
+\newpage
+\section*{References}
+\printbibliography[heading=none]
+
+\newpage
+
+% Please add the following required packages to your document preamble:
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
+\appendix
+\section{Questionnaires and items}
+
+
+
+
+\begin{ThreePartTable}
+	\begin{TableNotes}
+		\textit{Note.} 
+		(-) indicates inversely scored items.
+	\end{TableNotes}
+	\begin{longtabu} to \linewidth {
+				X[1,c]
+				X[1,c]
+				X[10,l]
+				X[10,l]}
+	\caption{\label{tab:icu_itemwording_original}\protect\linebreak[1]
+		\textit{ICU item wordings}} \\
+	\toprule
+	\multicolumn{1}{c}{Item} & \multicolumn{1}{c}{Coding} & \multicolumn{1}{c}{Original wording} & \multicolumn{1}{c}{German wording (Nds Survey)}\\
+		\midrule
+		\endfirsthead % everything above is the head for the beginning of the table
+			\toprule
+		\multicolumn{1}{c}{Item} & \multicolumn{1}{c}{Coding} & \multicolumn{1}{c}{Original wording} & \multicolumn{1}{c}{German wording (Nds Survey)}\\
+		\midrule
+		\endhead % all the lines above this will be repeated on every page
+		1  &(-) & I express my feelings openly. 			&		 Ich drücke meine Gefühle offen aus. \\			
+		\addlinespace				   
+		2 & & What I think is “right” and “wrong” is different from what other people think. &	Was ich für “richtig" und “falsch" halte, ist anders als das, was andere Leute denken. \\
+		\addlinespace
+		3  &(-) & I care about how well I do at school or work. & Es ist mir wichtig, wie gut ich in der Schule oder bei der Arbeit bin. \\
+		\addlinespace
+		4 & & I do not care who I hurt to get what I want. 		&	Es ist mir egal wen ich verletze um zu  bekommen was ich will. \\
+		\addlinespace
+		5  & (-)& I feel bad or guilty when I do something wrong.&	Wenn ich etwas Falsches mache, fühle ich mich schlecht und schuldig. \\
+		\addlinespace
+		6 & & I do not show my emotions to others. 			& Ich zeige anderen meine Gefühle nicht. \\
+		\addlinespace
+		7 & & I do not care about being on time. 		&	Es ist mir egal ob ich pünktlich bin. \\
+		\addlinespace
+		8 & (-) & I am concerned about the feelings of others. & Die Gefühle anderer sind mir wichtig. \\
+		\addlinespace
+		9 & & I do not care if I get into trouble. 			& Es macht mir nichts aus in Schwierigkeiten zu kommen.	\\
+		\addlinespace
+		10 & & I do not let my feelings control me. 	& Ich lasse mich nicht von meinen Gefühlen beherrschen.	\\
+		\addlinespace
+		11 & & I do not care about doing things well. 	& Es ist mir egal ob ich etwas gut mache. \\
+		\addlinespace
+		12 & & I seem very cold and uncaring to others. & Anderen gegenüber scheine ich kalt und gleichgültig zu sein. \\
+		\addlinespace
+		13 &(-)  & I easily admit to being wrong. 		& Es fällt mir leicht zuzugeben, wenn ich im Unrecht bin. \\
+		\addlinespace
+		14  &(-) & It is easy for others to tell how I am feeling. 	& Es fällt anderen leicht zu erkennen, wie ich mir [sic!] fühle. \\
+		\addlinespace
+		15 & (-) & I always try my best. 	& Ich versuche immer, mein Bestes zu geben.	\\
+		\addlinespace
+		16 &(-)  & I apologize (“say I am sorry”) to persons I hurt. &	Wenn ich jemanden verletzt habe, entschuldige ich mich.	\\
+		\addlinespace
+		17  &(-) & I try not to hurt others’ feelings. 				&	Ich versuche die Gefühle anderer nicht zu verletzen. \\
+		18 & & I do not feel remorseful when I do something wrong. 	& Ich habe keine Gewissensbisse, wenn ich etwas Falsches mache. \\
+		19  &(-) & I am very expressive and emotional. 			&	Ich bin sehr extrovertiert [sic!] und gefühlsbetont. \\
+		20 & & I do not like to put the time into doing things well. &	Ich mag es nicht, viel Zeit darauf zu verwenden, Dinge gut zu machen. \\
+		\addlinespace
+		21 & & The feelings of others are unimportant to me. &	Die Gefühle anderer sind für mich unwichtig.\\
+		22 & & I hide my feelings from others. 			& Ich verberge meine Gefühle vor anderen. \\
+		23 & (-) & I work hard on everything I do. 		& Bei allem, was ich tue gebe ich mir viel Mühe.\\
+		24 &(-)  & I do things to make others feel good. &	Ich tue Dinge, damit andere sich wohlfühlen.\\
+		\bottomrule
+		\insertTableNotes 
+	\end{longtabu}
+\end{ThreePartTable}
+
+\section{Deviation from Preregistration}
+
+The present analysis was preregistered on the Open Science Framework \todo{add link}.
+The preregistration was written in ignorance of the data to avoid any HARKING (hypothesizing after results known).\todo{add link to explain what harking is or why to preregister blindly}.
+After knowledge of the data a large proportion of the planned analyses were deemed unfeasible due to limited variability of the data at hand.
+
+Specifically, the planned analyses included a psychological network analysis with the ICU subscales as specified by the LPE specifier together with several indicators of anti-social behavior.
+The following table \ref{tab:descriptives_all} shows the descriptive statistics for all items that were originally planned to be entered into the analysis.
+
+
+	\begin{ThreePartTable}
+	\begin{TableNotes}
+		 \item \textit{Note.} 
+		 \item ICU = Inventory of Callous Unemotional Traits, CADRI = Conflict in Adolescent Dating Relationships Inventory.
+	\end{TableNotes}
+	\begin{longtabu} to \linewidth {>{\raggedright}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X}
+		\caption{\label{tab:descriptives_all}\protect\linebreak[1]
+			\textit{Descriptive Statistics for all Intended Nodes of a Preregistered Psychological Network Analysis}}\\
+		\toprule
+		\multicolumn{1}{c}{Item} & \multicolumn{1}{c}{\textit{n}} & \multicolumn{1}{c}{\textit{M}} & \multicolumn{1}{c}{\textit{SD}} & \multicolumn{1}{c}{Median}& \multicolumn{1}{c}{Min}& \multicolumn{1}{c}{Max}& \multicolumn{1}{c}{Skew} & \multicolumn{1}{c}{Kurtosis} & \multicolumn{1}{c}{\textit{SE}} \\
+		\midrule  		
+  		Battery Student & 3857 & 0.21 & 0.60 & 0.00 & 0 & 5 & 4.22 & 23.64 & 0.01 \\ 
+  		Tease Student & 3852 & 0.49 & 0.90 & 0 & 0.00 & 5 & 2.50 & 7.43 & 0.01 \\ 
+  		Vandalize & 3853 & 0.05 & 0.31 & 0.00 & 0 & 5 & 8.63 & 95.19 & 0.01 \\ 
+  		Extort & 3853 & 0.01 & 0.17 & 0.00 & 0 & 5 & 18.88 & 409.48 & 0.00 \\ 
+  		Exclude & 3848 & 0.12 & 0.43 & 0.00 & 0 & 5 & 5.19 & 35.09 & 0.01 \\ 
+  		Ignore & 3854 & 0.36 & 0.83 & 0.00 & 0 & 5 & 3.44 & 14.20 & 0.01 \\ 
+  		Ridicule teacher & 3851 & 0.18 & 0.65 & 0.00 & 0 & 5 & 5.01 & 29.10 & 0.01 \\ 
+  		Mean Teacher & 3856 & 0.12 & 0.55 & 0.00 & 0 & 5 & 6.09 & 42.42 & 0.01 \\ 
+  		Battery Teacher & 3858 & 0.01 & 0.22 & 0.00 & 0 & 5 & 19.11 & 391.96 & 0.00 \\ 
+  		\addlinespace
+  		Vehicle\ Theft & 3853 & 0.01 & 0.09 & 0 & 0.00 & 1 & 10.34 & 105.04 & 0.00 \\ 
+  		Larceny & 3848 & 0.01 & 0.11 & 0.00 & 0 & 1 & 9.08 & 80.48 & 0.00 \\ 
+  		Burglary & 3852 & 0.00 & 0.06 & 0.00 & 0 & 1 & 16.49 & 270.00 & 0.00 \\ 
+  		Battery & 3840 & 0.05 & 0.21 & 0.00 & 0 & 1 & 4.22 & 15.80 & 0.00 \\ 
+  		Battery mult perp & 3844 & 0.01 & 0.10 & 0.00 & 0 & 1 & 10.04 & 98.85 & 0.00 \\ 
+  		Armed Battery & 3845 & 0.00 & 0.07 & 0 & 0.00 & 1 & 14.93 & 221.06 & 0.00 \\ 
+  		Robbery & 3845 & 0.00 & 0.07 & 0.00 & 0 & 1 & 14.11 & 197.27 & 0.00 \\ 
+  		Extortion & 3847 & 0.00 & 0.05 & 0.00 & 0 & 1 & 21.85 & 475.63 & 0.00 \\ 
+  		Sexual Assault & 3847 & 0.00 & 0.07 & 0 & 0.00 & 1 & 14.94 & 221.18 & 0.00 \\ 
+  		\addlinespace
+  		CADRI01 & 1435 & 0.47 & 0.77 & 0.00 & 0 & 3 & 1.73 & 2.53 & 0.02 \\ 
+  		CADRI02 & 1421 & 0.53 & 0.75 & 0.00 & 0 & 3 & 1.42 & 1.55 & 0.02 \\ 
+  		CADRI03 & 1429 & 0.05 & 0.28 & 0.00 & 0 & 3 & 6.99 & 53.94 & 0.01 \\ 
+  		CADRI04 & 1433 & 0.04 & 0.26 & 0.00 & 0 & 3 & 7.77 & 67.81 & 0.01 \\ 
+  		CADRI05 & 1432 & 0.06 & 0.28 & 0.00 & 0 & 3 & 5.59 & 36.14 & 0.01 \\ 
+  		CADRI06 & 1433 & 0.07 & 0.33 & 0.00 & 0 & 3 & 5.30 & 31.96 & 0.01 \\ 
+  		CADRI07 & 1434 & 0.07 & 0.35 & 0.00 & 0 & 3 & 6.32 & 44.44 & 0.01 \\ 
+  		CADRI08 & 1432 & 0.07 & 0.34 & 0.00 & 0 & 3 & 5.76 & 37.46 & 0.01 \\ 
+  		CADRI09 & 1433 & 0.02 & 0.20 & 0.00 & 0 & 3 & 10.77 & 129.00 & 0.01 \\ 
+  		CADRI10 & 1432 & 0.01 & 0.14 & 0.00 & 0 & 3 & 17.27 & 331.05 & 0.00 \\ 
+		\bottomrule
+\insertTableNotes 
+\end{longtabu}
+\end{ThreePartTable}
+
+These behavioural outcomes were chosen based on previous research. 
+They include typical outcomes assessed in combination with the ICU such as aggression and non-violent delinquency (theft, vandalism) \parencite{cardinale_reliability_2017}.
+\textcites{andershed_psychopathic_2012} have assessed a large community sample of Swedish 8th grade students.
+They they have used items similar in content as well as scaling to assess various indicators of problematic conduct. CU traits were assessed using the CU factor od the YPI.
+The correlations and item variability they obtained in this highly comparable design were still relatively small (as can be expected in a community sample) but still sufficient to carry out the analyses I had intended. 
+I can only speculate to the reasons of insufficient variability and association compared to the Swedish study. 
+The Swedish study had a very high response rate (93\% compared to 63.5\%). 
+It could hence be that multiple forms of selection bias played a role.
+Principles from schools with high conduct problems could have refused participations. 
+Parents from students with conduct problems could have refused parental consent. 
+Students With conduct problems could have been absent with a higher probability on the day the survey was taken or refused participation themselves.
+  
+
+	\begin{ThreePartTable}
+	\begin{TableNotes}
+		\item \textit{Note.} 
+		\item ICU = Inventory of Callous Unemotional Traits, CADRI = Conflict in Adolescent Dating Relationships Inventory.
+		\item \textit{p}<.001 for all correlations. Correlations are polychoric for ordered categorical measures (with less than  categories) and biserial for dichotomous items.
+	\end{TableNotes}
+	\begin{longtabu} to \linewidth {>{\raggedright}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X}
+		\caption{\label{tab:correlations all_all}\protect\linebreak[1]
+			\textit{Correlations of all Intended Nodes of a Preregistered Psychological Network Analysis with ICU Subscales}}\\
+		\toprule
+		\multicolumn{1}{c}{Item}& \multicolumn{1}{c}{Uncaring} & \multicolumn{1}{c}{Unemotional} & \multicolumn{1}{c}{Callous} & \multicolumn{1}{c}{Careless}\\ 
+		\midrule
+		Battery student & -0.01 & -0.01 & -0.02 & 0.00 \\ 
+		Tease Student & -0.01 & -0.00 & -0.02 & -0.04 \\ 
+		Vandalize & -0.01 & -0.02 & -0.00 & -0.00 \\ 
+		Extort & 0.01 & 0.00 & 0.03 & 0.01 \\ 
+		Exclude & 0.02 & 0.03 & -0.00 & -0.01 \\ 
+		Ignore & -0.02 & 0.00 & -0.02 & -0.03 \\ 
+		Ridicule Teacher & 0.01 & 0.03 & 0.00 & 0.02 \\ 
+		Mean Teacher & 0.01 & 0.02 & 0.01 & 0.02 \\ 
+		Battery Teacher & -0.01 & 0.01 & -0.00 & -0.01 \\ 
+		Vehicle Theft & 0.17 & -0.04 & 0.10 & 0.09 \\ 
+		Larceny & -0.01 & -0.07 & 0.12 & 0.02 \\ 
+		Burglary & 0.05 & 0.03 & 0.03 & 0.09 \\ 
+		Battery & -0.01 & 0.00 & 0.01 & 0.03 \\ 
+		Battery mult perp & -0.08 & -0.07 & -0.02 & -0.05 \\ 
+		Armed battery & -0.07 & -0.03 & 0.05 & 0.03 \\ 
+		Robbery & 0.13 & -0.04 & 0.13 & 0.06 \\ 
+		Extortion & -0.07 & -0.09 & 0.10 & 0.06 \\ 
+		Sexual Assault & -0.08 & -0.08 & 0.01 & -0.05 \\ 
+		CADRI01 & -0.02 & -0.02 & -0.04 & 0.01 \\ 
+		CADRI02 & 0.03 & -0.00 & 0.01 & 0.05 \\ 
+		CADRI03 & -0.04 & -0.01 & -0.06 & -0.09 \\ 
+		CADRI04 & -0.04 & -0.05 & -0.01 & -0.02 \\ 
+		CADRI05 & 0.01 & 0.02 & 0.03 & -0.03 \\ 
+		CADRI06 & -0.01 & 0.00 & 0.03 & 0.01 \\ 
+		CADRI07 & 0.03 & -0.02 & 0.01 & -0.03 \\ 
+		CADRI08 & 0.03 & -0.02 & 0.02 & -0.00 \\ 
+		CADRI09 & -0.08 & -0.09 & -0.07 & -0.08 \\ 
+		CADRI10 & 0.06 & -0.12 & 0.04 & 0.12 \\ 
+		\bottomrule
+\insertTableNotes 
+\end{longtabu}
+\end{ThreePartTable}
+
+
+
+
+
+\section{Other constructs assessed in the Niedersachsensurvey}
+
+The participants answered questions and questionnaires comprising the following constructs:
+\setlength{\columnsep}{-0.2in}
+\begin{multicols}{3}
+	\begin{itemize}
+		\setlength{\itemsep}{0pt}%
+		\setlength{\parskip}{0pt}
+		\item Membership in groups, clubs and organizations
+		\item Sleep and wakeup time
+		\item Media consumption
+		\item Frequency of explicit movie consumption
+		\item View on male and female roles
+		\item Self-control
+		\item Empathy
+		\item Pro-social Behavior
+		\item Impulsivity
+		\item Depression
+		\item General anxiety
+		\item Somatic complaints
+		\item Number of sick days
+		\item Social support
+		\item Victimization of violent crimes
+		\item Victimization of non-violent crimes
+		\item Family constellation
+		\item Experiences of loss and separation
+		\item Household income
+		\item Parental education
+		\item Parental employment status
+		\item Parental warmth and parental control
+		\item Corporal punishment
+		\item Parental partner violence
+		\item Parental physical child abuse
+		\item Neighborhood assessment
+		\item Leisure time activities
+		\item Illegal activities of friends
+		\item Intimate partner history
+		\item Intimate partner violence
+		\item Teacher targeted aggression
+		\item School grades
+		\item Opinions about school, teachers and fellow students
+		\item ADHD diagnosis
+		\item Drug education
+		\item Conflict resolution training
+		\item Parental involvement in school activities
+		\item Weapons in school
+		\item Truancy
+		\item School based violence victimization
+		\item School based violent perpetration
+		\item Cyberbullying victimization
+		\item Cyberbullying perpetration
+		\item Gambling
+		\item Religion and religiosity
+		\item Alcohol and drug consumption
+		\item Ethnic origin
+		\item Computer and videogame consumption and pathology
+		\item Deliberate ...
+		\item Police contact
+		\item Illegal activities
+		\item Life satisfaction
+		\item Islamic radicalization
+		\item Intergroup relations
+		\item Xenophobia
+		\item Political extremism
+	\end{itemize}
+\end{multicols}
+
+\section{Analysis Code}
+The analysis code is available at \url{https://github.com/annloh/ICUmultinet}
+The following information is an excerpt of the readme and provides an overview of the code structure
+Figure \todo{add figure and reference} provides an overview to the folder structure of the code.
+This structure is identical on github as well as for the files submitted along with the thesis.
+However, the git hub repository does not contain the raw data. Note that the data provided is not the full survey data but merely the subset required to reproduce the present manuscript.
+
+\section{Deviation from the preregistration}
+The preregistration lists a number of other constructs and scales that were planned for inclusion in the covariate network.
+Upon closer inspection I decided to not include those variables/scales in the analysis.
+Justification for this step is based in theory as well as methodology.
+The construct of dating violence is based on the premise of a romantic relationship.
+Consequently the scale was only assessed for participants who have been in a romantic relationship within 12 months prior to assessment.
+A partial correlation network with items that are simultaneously indicators for the presence of a romantic relationship are likely 
+not interpretable with regard to the construct they were intended to measure (dating violence). I hence decided to not include the CADRI scale in the analysis.
+\todo{add justification for exclusion of violent perpetration items}.
+Due to a software error in the \texttt{bootnet} package the glasso analysis could not be conducted without non-paranormal transformation and RIC based penalization.
+
+
+
+
+\subsection{README}
+The analysis code has the following structure
+
+It is based on the idea of a research compendium as suggested by \parencite{marwick_packaging_2018} and was created using the R package \texttt{rrtools}.
+
+\subsubsection{.\textbackslash analysis \textbackslash data \textbackslash raw\_data\textbackslash}
+This directory contains the raw data as well as the SPSS syntax used to obtain this selection of items from the original survey data.
+(Not on github.)
+
+\subsubsection{.\textbackslash R}
+This directory contains all R scripts pertaining to the analysis.
+
+\paragraph{main.R}
+Running this R-script will completely reproduce the analysis, given, the availability of the datafile.
+It sources all other scripts and outputs all graphs and tables.
+Formatting of plots and tables might slightly differ from the manuscript version.
+These differences are purely cosmetic.
+
+Warning: The present analysis is computationally expensive.
+Running the analysis on a personal computer will take multiple days.
+
+\paragraph{dependencies.R}
+This R-script specifies the required packages.
+It includes an installer function that will automatically install packages should they not be available.
+If you do not want any packages installed automatically do not run this script. (Nor main.R which will source this script.)
+
+\paragraph{import\_and\_cleaning.R}
+Imports data from SPSS. Prepares data for analysis by definition of datasets for each scale. Definition of subscales.
+Specification of item wordings and recoding inverted items.
+
+\paragraph{imputation.R}
+Conducts single imputation of missing data.
+
+\paragraph{descriptives.R}
+Computes descriptive statistics and performs item analyses for all scales.
+
+\paragraph{multiverse\_definition.R}
+Defines a list of all parameter constellations to be used for teh multi-verse analysis.
+Furthermore, a data frame with grouping variables is defined which is latter used to 	differentiate the results.
+
+\paragraph{psychometric\_network.R}
+Conducts a pszchometric network analysis of all ICU items.
+
+\paragraph{covariate\_network.R}
+Conducts a network analysis of the LPE subscales and covariates.
+
+\paragraph{plotting.R}
+Creates all plots from the manuscript.
+
+\paragraph{tables.R}
+Produces tables from the manuscript.
+
+\subsection{Reproducibility measures}
+As suggested by Epskamp \todo{add reference} the \texttt{sessionInfo()}
+is stated below. It containes all packages loaded during the analysis as well as additional information on the system the analyses were implemented on.
+
+While this information does not guarantee reproducibility it increases the likelihood of computational reproduction of the results presented here.
+All random seeds are provided directly in the code.
+
+This report was generated on $2020-05-04 15:27:17$ using the following computational environment and dependencies:
+
+
+\begin{Schunk}
+\begin{Soutput}
+- Session info ---------------------------------------------------------------
+ setting  value                       
+ version  R version 3.6.3 (2020-02-29)
+ os       Windows 10 x64              
+ system   x86_64, mingw32             
+ ui       RTerm                       
+ language (EN)                        
+ collate  English_United States.1252  
+ ctype    English_United States.1252  
+ tz       Europe/Berlin               
+ date     2020-05-04                  
+
+- Packages -------------------------------------------------------------------
+ package        * version    date       lib source        
+ abind            1.4-5      2016-07-21 [1] CRAN (R 3.6.0)
+ acepack          1.4.1      2016-10-29 [1] CRAN (R 3.6.3)
+ assertthat       0.2.1      2019-03-21 [1] CRAN (R 3.6.3)
+ backports        1.1.6      2020-04-05 [1] CRAN (R 3.6.3)
+ base64enc        0.1-3      2015-07-28 [1] CRAN (R 3.6.0)
+ BDgraph          2.62       2019-12-05 [1] CRAN (R 3.6.3)
+ boot             1.3-24     2019-12-20 [2] CRAN (R 3.6.3)
+ bootnet        * 1.3        2020-01-22 [1] CRAN (R 3.6.3)
+ broom            0.5.6      2020-04-20 [1] CRAN (R 3.6.3)
+ callr            3.4.3      2020-03-28 [1] CRAN (R 3.6.3)
+ candisc          0.8-3      2020-04-22 [1] CRAN (R 3.6.3)
+ car              3.0-7      2020-03-11 [1] CRAN (R 3.6.3)
+ carData          3.0-3      2019-11-16 [1] CRAN (R 3.6.1)
+ cellranger       1.1.0      2016-07-27 [1] CRAN (R 3.6.3)
+ checkmate        2.0.0      2020-02-06 [1] CRAN (R 3.6.3)
+ class            7.3-15     2019-01-01 [2] CRAN (R 3.6.3)
+ cli              2.0.2      2020-02-28 [1] CRAN (R 3.6.3)
+ cluster          2.1.0      2019-06-19 [2] CRAN (R 3.6.3)
+ cmprsk           2.2-9      2019-10-09 [1] CRAN (R 3.6.3)
+ codetools        0.2-16     2018-12-24 [2] CRAN (R 3.6.3)
+ colorspace       1.4-1      2019-03-18 [1] CRAN (R 3.6.1)
+ corpcor          1.6.9      2017-04-01 [1] CRAN (R 3.6.0)
+ crayon           1.3.4      2017-09-16 [1] CRAN (R 3.6.3)
+ curl             4.3        2019-12-02 [1] CRAN (R 3.6.3)
+ d3Network        0.5.2.1    2015-01-31 [1] CRAN (R 3.6.3)
+ data.table       1.12.8     2019-12-09 [1] CRAN (R 3.6.3)
+ DBI              1.1.0      2019-12-15 [1] CRAN (R 3.6.3)
+ dbplyr           1.4.3      2020-04-19 [1] CRAN (R 3.6.3)
+ desc             1.2.0      2018-05-01 [1] CRAN (R 3.6.3)
+ devtools         2.3.0      2020-04-10 [1] CRAN (R 3.6.3)
+ digest           0.6.25     2020-02-23 [1] CRAN (R 3.6.3)
+ doParallel       1.0.15     2019-08-02 [1] CRAN (R 3.6.3)
+ dplyr          * 0.8.5      2020-03-07 [1] CRAN (R 3.6.3)
+ e1071            1.7-3      2019-11-26 [1] CRAN (R 3.6.3)
+ eigenmodel       1.11       2019-05-28 [1] CRAN (R 3.6.0)
+ ellipse          0.4.1      2018-01-05 [1] CRAN (R 3.6.3)
+ ellipsis         0.3.0      2019-09-20 [1] CRAN (R 3.6.3)
+ Epi              2.40       2019-11-25 [1] CRAN (R 3.6.3)
+ etm              1.1        2020-04-20 [1] CRAN (R 3.6.3)
+ evaluate         0.14       2019-05-28 [1] CRAN (R 3.6.3)
+ fansi            0.4.1      2020-01-08 [1] CRAN (R 3.6.3)
+ fdrtool          1.2.15     2015-07-08 [1] CRAN (R 3.6.0)
+ forcats        * 0.5.0      2020-03-01 [1] CRAN (R 3.6.3)
+ foreach          1.5.0      2020-03-30 [1] CRAN (R 3.6.3)
+ foreign        * 0.8-75     2020-01-20 [2] CRAN (R 3.6.3)
+ Formula          1.2-3      2018-05-03 [1] CRAN (R 3.6.0)
+ fs               1.4.1      2020-04-04 [1] CRAN (R 3.6.3)
+ gdata            2.18.0     2017-06-06 [1] CRAN (R 3.6.3)
+ GeneNet          1.2.14     2020-02-06 [1] CRAN (R 3.6.2)
+ generics         0.0.2      2018-11-29 [1] CRAN (R 3.6.3)
+ ggplot2        * 3.3.0      2020-03-05 [1] CRAN (R 3.6.3)
+ glasso           1.11       2019-10-01 [1] CRAN (R 3.6.1)
+ glmnet           3.0-2      2019-12-11 [1] CRAN (R 3.6.3)
+ glue             1.4.0      2020-04-03 [1] CRAN (R 3.6.3)
+ gridExtra        2.3        2017-09-09 [1] CRAN (R 3.6.3)
+ gtable           0.3.0      2019-03-25 [1] CRAN (R 3.6.3)
+ gtools           3.8.2      2020-03-31 [1] CRAN (R 3.6.3)
+ haven          * 2.2.0      2019-11-08 [1] CRAN (R 3.6.3)
+ heplots          1.3-5      2018-04-03 [1] CRAN (R 3.6.3)
+ Hmisc            4.4-0      2020-03-23 [1] CRAN (R 3.6.3)
+ hms              0.5.3      2020-01-08 [1] CRAN (R 3.6.3)
+ htmlTable        1.13.3     2019-12-04 [1] CRAN (R 3.6.3)
+ htmltools        0.4.0      2019-10-04 [1] CRAN (R 3.6.3)
+ htmlwidgets      1.5.1      2019-10-08 [1] CRAN (R 3.6.3)
+ httr             1.4.1      2019-08-05 [1] CRAN (R 3.6.3)
+ huge             1.3.4.1    2020-04-01 [1] CRAN (R 3.6.3)
+ igraph         * 1.2.5      2020-03-19 [1] CRAN (R 3.6.3)
+ IsingFit         0.3.1      2016-09-07 [1] CRAN (R 3.6.3)
+ IsingSampler     0.2.1      2020-01-25 [1] CRAN (R 3.6.3)
+ iterators        1.0.12     2019-07-26 [1] CRAN (R 3.6.3)
+ jpeg             0.1-8.1    2019-10-24 [1] CRAN (R 3.6.1)
+ jsonlite         1.6.1      2020-02-02 [1] CRAN (R 3.6.3)
+ kableExtra     * 1.1.0      2019-03-16 [1] CRAN (R 3.6.3)
+ knitr            1.28       2020-02-06 [1] CRAN (R 3.6.3)
+ lattice          0.20-38    2018-11-04 [2] CRAN (R 3.6.3)
+ latticeExtra     0.6-29     2019-12-19 [1] CRAN (R 3.6.3)
+ lavaan           0.6-5      2019-08-28 [1] CRAN (R 3.6.3)
+ lifecycle        0.2.0      2020-03-06 [1] CRAN (R 3.6.3)
+ longitudinal     1.1.12     2015-07-08 [1] CRAN (R 3.6.0)
+ lubridate        1.7.8      2020-04-06 [1] CRAN (R 3.6.3)
+ magrittr         1.5        2014-11-22 [1] CRAN (R 3.6.3)
+ MASS             7.3-51.5   2019-12-20 [2] CRAN (R 3.6.3)
+ Matrix           1.2-18     2019-11-27 [2] CRAN (R 3.6.3)
+ matrixcalc       1.0-3      2012-09-15 [1] CRAN (R 3.6.0)
+ memoise          1.1.0      2017-04-21 [1] CRAN (R 3.6.3)
+ mgcv             1.8-31     2019-11-09 [2] CRAN (R 3.6.3)
+ mgm              1.2-9      2020-04-20 [1] CRAN (R 3.6.3)
+ mice           * 3.8.0      2020-02-21 [1] CRAN (R 3.6.3)
+ mitools          2.4        2019-04-26 [1] CRAN (R 3.6.3)
+ mnormt           1.5-6      2020-02-03 [1] CRAN (R 3.6.2)
+ modelr           0.1.7      2020-04-30 [1] CRAN (R 3.6.3)
+ munsell          0.5.0      2018-06-12 [1] CRAN (R 3.6.3)
+ mvtnorm          1.1-0      2020-02-24 [1] CRAN (R 3.6.2)
+ NetworkToolbox * 1.4.0      2020-03-08 [1] CRAN (R 3.6.3)
+ networktools   * 1.2.3      2020-04-20 [1] CRAN (R 3.6.3)
+ nlme             3.1-144    2020-02-06 [2] CRAN (R 3.6.3)
+ nnet             7.3-12     2016-02-02 [2] CRAN (R 3.6.3)
+ nnls             1.4        2012-03-19 [1] CRAN (R 3.6.0)
+ numDeriv         2016.8-1.1 2019-06-06 [1] CRAN (R 3.6.0)
+ openxlsx         4.1.4      2019-12-06 [1] CRAN (R 3.6.3)
+ parcor           0.2-6      2014-09-04 [1] CRAN (R 3.6.3)
+ patchwork      * 1.0.0      2019-12-01 [1] CRAN (R 3.6.3)
+ pbapply          1.4-2      2019-08-31 [1] CRAN (R 3.6.1)
+ pbivnorm         0.6.0      2015-01-23 [1] CRAN (R 3.6.0)
+ pillar           1.4.3      2019-12-20 [1] CRAN (R 3.6.3)
+ pkgbuild         1.0.7      2020-04-25 [1] CRAN (R 3.6.3)
+ pkgconfig        2.0.3      2019-09-22 [1] CRAN (R 3.6.3)
+ pkgload          1.0.2      2018-10-29 [1] CRAN (R 3.6.3)
+ plotrix          3.7-8      2020-04-16 [1] CRAN (R 3.6.3)
+ plyr             1.8.6      2020-03-03 [1] CRAN (R 3.6.3)
+ png              0.1-7      2013-12-03 [1] CRAN (R 3.6.0)
+ polynom          1.4-0      2019-03-22 [1] CRAN (R 3.6.3)
+ ppls             1.6-1.1    2018-07-20 [1] CRAN (R 3.6.3)
+ prettyunits      1.1.1      2020-01-24 [1] CRAN (R 3.6.3)
+ processx         3.4.2      2020-02-09 [1] CRAN (R 3.6.3)
+ ps               1.3.2      2020-02-13 [1] CRAN (R 3.6.3)
+ psych          * 1.9.12.31  2020-01-08 [1] CRAN (R 3.6.3)
+ psychTools     * 1.9.12     2020-01-08 [1] CRAN (R 3.6.3)
+ purrr          * 0.3.3      2019-10-18 [1] CRAN (R 3.6.3)
+ qgraph           1.6.5      2020-02-21 [1] CRAN (R 3.6.3)
+ R.methodsS3      1.8.0      2020-02-14 [1] CRAN (R 3.6.2)
+ R.oo             1.23.0     2019-11-03 [1] CRAN (R 3.6.2)
+ R.utils          2.9.2      2019-12-08 [1] CRAN (R 3.6.3)
+ R6               2.4.1      2019-11-12 [1] CRAN (R 3.6.3)
+ RColorBrewer   * 1.1-2      2014-12-07 [1] CRAN (R 3.6.0)
+ Rcpp             1.0.4.6    2020-04-09 [1] CRAN (R 3.6.3)
+ readr          * 1.3.1      2018-12-21 [1] CRAN (R 3.6.3)
+ readxl           1.3.1      2019-03-13 [1] CRAN (R 3.6.3)
+ relaimpo         2.2-3      2018-03-10 [1] CRAN (R 3.6.3)
+ remotes          2.1.1      2020-02-15 [1] CRAN (R 3.6.3)
+ reprex           0.3.0      2019-05-16 [1] CRAN (R 3.6.3)
+ reshape2         1.4.4      2020-04-09 [1] CRAN (R 3.6.3)
+ rio              0.5.16     2018-11-26 [1] CRAN (R 3.6.3)
+ rjson            0.2.20     2018-06-08 [1] CRAN (R 3.6.0)
+ rlang            0.4.5      2020-03-01 [1] CRAN (R 3.6.3)
+ rmarkdown        2.1        2020-01-20 [1] CRAN (R 3.6.3)
+ rpart            4.1-15     2019-04-12 [2] CRAN (R 3.6.3)
+ rprojroot        1.3-2      2018-01-03 [1] CRAN (R 3.6.3)
+ rstudioapi       0.11       2020-02-07 [1] CRAN (R 3.6.3)
+ rvest            0.3.5      2019-11-08 [1] CRAN (R 3.6.3)
+ scales           1.1.0      2019-11-18 [1] CRAN (R 3.6.3)
+ sessioninfo      1.1.1      2018-11-05 [1] CRAN (R 3.6.3)
+ shape            1.4.4      2018-02-07 [1] CRAN (R 3.6.0)
+ smacof           2.1-0      2020-03-03 [1] CRAN (R 3.6.3)
+ stringi          1.4.6      2020-02-17 [1] CRAN (R 3.6.2)
+ stringr        * 1.4.0      2019-02-10 [1] CRAN (R 3.6.3)
+ survey           4.0        2020-04-03 [1] CRAN (R 3.6.3)
+ survival         3.1-8      2019-12-03 [2] CRAN (R 3.6.3)
+ testthat         2.3.2      2020-03-02 [1] CRAN (R 3.6.3)
+ tibble         * 3.0.0      2020-03-30 [1] CRAN (R 3.6.3)
+ tidyr          * 1.0.2      2020-01-24 [1] CRAN (R 3.6.3)
+ tidyselect       1.0.0      2020-01-27 [1] CRAN (R 3.6.3)
+ tidyverse      * 1.3.0      2019-11-21 [1] CRAN (R 3.6.3)
+ usethis          1.6.1      2020-04-29 [1] CRAN (R 3.6.3)
+ vctrs            0.2.4      2020-03-10 [1] CRAN (R 3.6.3)
+ viridisLite      0.3.0      2018-02-01 [1] CRAN (R 3.6.3)
+ webshot          0.5.2      2019-11-22 [1] CRAN (R 3.6.3)
+ weights          1.0.1      2020-02-12 [1] CRAN (R 3.6.3)
+ whisker          0.4        2019-08-28 [1] CRAN (R 3.6.3)
+ withr            2.2.0      2020-04-20 [1] CRAN (R 3.6.3)
+ wordcloud        2.6        2018-08-24 [1] CRAN (R 3.6.3)
+ xfun             0.13       2020-04-13 [1] CRAN (R 3.6.3)
+ xml2             1.3.1      2020-04-09 [1] CRAN (R 3.6.3)
+ xtable         * 1.8-4      2019-04-21 [1] CRAN (R 3.6.3)
+ zip              2.0.4      2019-09-01 [1] CRAN (R 3.6.3)
+ zoo              1.8-7      2020-01-10 [1] CRAN (R 3.6.3)
+
+[1] C:/Users/Anna/Documents/R/win-library/3.6
+[2] C:/Program Files/R/R-3.6.3/library
+\end{Soutput}
+\end{Schunk}
+
+The current Git commit details are:
+
+\begin{Schunk}
+\begin{Soutput}
+Local:    master C:/Users/Anna/Dropbox/anna/projects/ICUmultinet
+Remote:   master @ origin (https://github.com/annloh/ICUmultinet.git)
+Head:     [e180abc] 2020-04-10: Add package parts
+\end{Soutput}
+\end{Schunk}
+
+
+
+
+
+
+\end{document}
+
+
+%Ihre Arbeit umfasst:
+%1. Einleitung,
+%2. Theorie,
+%3. Methode,
+%4. Ergebnisse,
+%5. Diskussion sowie das
+%Literaturverzeichnis und den Anhang. Darunter
+%sind selbstverständlich Zwischenüberschriften auf niedrigeren Gliederungsebenen
+%sinnvoll, die Sie ebenfalls nummerieren sollten (z. B.: 2.3 Hypothesen). Versuchen Sie,
+%nach Möglichkeit mit höchstens vier Gliederungsebenen auszukommen.
+
+

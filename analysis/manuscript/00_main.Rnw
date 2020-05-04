@@ -1,0 +1,149 @@
+\documentclass[a4paper,12pt]{article} % change doc to man for apa formatted manuscript
+
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[backend=biber, style=apa]{biblatex}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\usepackage[toc]{appendix} %For making appendix appear in toc
+	\renewcommand{\appendixname}{Supplement} %Rename Appendix to Supplement
+	\renewcommand{\appendixtocname}{Supplement}
+
+\usepackage{caption}
+	\captionsetup{format=plain,labelsep=none,singlelinecheck=false, justification=raggedright} %to left align table caption
+	\captionsetup{labelfont=bf, indention=0cm} %Remove colon from Table caption
+
+%stuff from rmarkdown
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage[flushleft, para]{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+
+%\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{hanging} %for sections with hanging indentation
+\usepackage{multicol} %for multicolumnlists
+\usepackage{float} %for placing tables and figures close to the text where they belong
+\usepackage[nopostdot, toc, acronym, nomain, nonumberlist]{glossaries} %for list of abbreviations
+\linespread{1.25} %line spacing might need to be changed to 1.5\linespread{1.25} %line spacing might need to be changed to 1.5
+\usepackage[a4paper,
+			right=4.5cm,
+			left =2.5cm,
+			top=2cm,
+			bottom=2.5cm,
+			includeheadfoot, % text area includes header
+			nofoot,% no space for footer
+			%showframe% show the page layout
+			]{geometry} %page margins
+
+%---Formatting for bibliography
+
+\addbibresource{biblatex_bib.bib}	%for bibliography
+\bibliography{biblatex_bib}			%for bibliography
+
+%---Formatting for list of abbreviation
+
+	\makeglossaries					%for list of abbreviations
+	\setacronymstyle{long-short}	%for list of abbreviations
+	\loadglsentries[acronym]{list_of_abbreviations} %for list of abbreviations
+\setlength{\glsdescwidth}{1\hsize} %decreasing the indentation in the list of abbreviations
+
+%--- changing the title of the table of contents
+\addto\captionsamerican{\renewcommand{\contentsname}{Table of Contents}}
+
+
+%---
+\pagestyle{myheadings} % puts page number top right
+%---
+\usepackage{indentfirst} %makes sure paragraphs are also indented after headings
+%---
+\newcommand{\todo}[1]{\textcolor{red}{TODO: #1}\PackageWarning{TODO:}{#1!}} %add \todo command for todolists
+
+
+\usepackage[hidelinks, linktoc = all]{hyperref} %for adding clickable references without hideous boxes
+
+%######################################################################################################################
+%#### END OF PREAMBLE
+%######################################################################################################################
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+
+
+<<first_chunk, echo=FALSE>>=
+source('import_to_sweave.R')
+@
+
+
+%--- Inputting all the manuscript parts
+\input{00a_titlepage.tex}
+\newpage
+\setcounter{page}{2} % ensure that first page counts as well and numbering starts with 2
+\tableofcontents
+
+\newpage
+
+\listoftables
+
+\newpage
+
+\listoffigures
+
+\newpage
+
+
+\printglossary[title={List of Abbreviations}, type=acronym, style=long]
+
+\newpage
+
+\input{00b_abstract.tex}
+
+\newpage
+
+\input{01_introduction.tex}
+\input{02_theory.tex}
+\SweaveInput{03_methods.Rnw}
+\SweaveInput{04_results.Rnw}
+\input{05_discussion.tex}
+
+\newpage
+\section*{References}
+\printbibliography[heading=none]
+
+\newpage
+
+\SweaveInput{06_supplements.Rnw}
+
+
+
+
+\end{document}
+
+
+%Ihre Arbeit umfasst:
+%1. Einleitung,
+%2. Theorie,
+%3. Methode,
+%4. Ergebnisse,
+%5. Diskussion sowie das
+%Literaturverzeichnis und den Anhang. Darunter
+%sind selbstverständlich Zwischenüberschriften auf niedrigeren Gliederungsebenen
+%sinnvoll, die Sie ebenfalls nummerieren sollten (z. B.: 2.3 Hypothesen). Versuchen Sie,
+%nach Möglichkeit mit höchstens vier Gliederungsebenen auszukommen.
+
+

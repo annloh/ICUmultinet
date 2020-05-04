@@ -1,0 +1,354 @@
+% Please add the following required packages to your document preamble:
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
+\appendix
+\section{Questionnaires and items}
+
+
+
+
+\begin{ThreePartTable}
+	\begin{TableNotes}
+		\textit{Note.} 
+		(-) indicates inversely scored items.
+	\end{TableNotes}
+	\begin{longtabu} to \linewidth {
+				X[1,c]
+				X[1,c]
+				X[10,l]
+				X[10,l]}
+	\caption{\label{tab:icu_itemwording_original}\protect\linebreak[1]
+		\textit{ICU item wordings}} \\
+	\toprule
+	\multicolumn{1}{c}{Item} & \multicolumn{1}{c}{Coding} & \multicolumn{1}{c}{Original wording} & \multicolumn{1}{c}{German wording (Nds Survey)}\\
+		\midrule
+		\endfirsthead % everything above is the head for the beginning of the table
+			\toprule
+		\multicolumn{1}{c}{Item} & \multicolumn{1}{c}{Coding} & \multicolumn{1}{c}{Original wording} & \multicolumn{1}{c}{German wording (Nds Survey)}\\
+		\midrule
+		\endhead % all the lines above this will be repeated on every page
+		1  &(-) & I express my feelings openly. 			&		 Ich drücke meine Gefühle offen aus. \\			
+		\addlinespace				   
+		2 & & What I think is “right” and “wrong” is different from what other people think. &	Was ich für “richtig" und “falsch" halte, ist anders als das, was andere Leute denken. \\
+		\addlinespace
+		3  &(-) & I care about how well I do at school or work. & Es ist mir wichtig, wie gut ich in der Schule oder bei der Arbeit bin. \\
+		\addlinespace
+		4 & & I do not care who I hurt to get what I want. 		&	Es ist mir egal wen ich verletze um zu  bekommen was ich will. \\
+		\addlinespace
+		5  & (-)& I feel bad or guilty when I do something wrong.&	Wenn ich etwas Falsches mache, fühle ich mich schlecht und schuldig. \\
+		\addlinespace
+		6 & & I do not show my emotions to others. 			& Ich zeige anderen meine Gefühle nicht. \\
+		\addlinespace
+		7 & & I do not care about being on time. 		&	Es ist mir egal ob ich pünktlich bin. \\
+		\addlinespace
+		8 & (-) & I am concerned about the feelings of others. & Die Gefühle anderer sind mir wichtig. \\
+		\addlinespace
+		9 & & I do not care if I get into trouble. 			& Es macht mir nichts aus in Schwierigkeiten zu kommen.	\\
+		\addlinespace
+		10 & & I do not let my feelings control me. 	& Ich lasse mich nicht von meinen Gefühlen beherrschen.	\\
+		\addlinespace
+		11 & & I do not care about doing things well. 	& Es ist mir egal ob ich etwas gut mache. \\
+		\addlinespace
+		12 & & I seem very cold and uncaring to others. & Anderen gegenüber scheine ich kalt und gleichgültig zu sein. \\
+		\addlinespace
+		13 &(-)  & I easily admit to being wrong. 		& Es fällt mir leicht zuzugeben, wenn ich im Unrecht bin. \\
+		\addlinespace
+		14  &(-) & It is easy for others to tell how I am feeling. 	& Es fällt anderen leicht zu erkennen, wie ich mir [sic!] fühle. \\
+		\addlinespace
+		15 & (-) & I always try my best. 	& Ich versuche immer, mein Bestes zu geben.	\\
+		\addlinespace
+		16 &(-)  & I apologize (“say I am sorry”) to persons I hurt. &	Wenn ich jemanden verletzt habe, entschuldige ich mich.	\\
+		\addlinespace
+		17  &(-) & I try not to hurt others’ feelings. 				&	Ich versuche die Gefühle anderer nicht zu verletzen. \\
+		18 & & I do not feel remorseful when I do something wrong. 	& Ich habe keine Gewissensbisse, wenn ich etwas Falsches mache. \\
+		19  &(-) & I am very expressive and emotional. 			&	Ich bin sehr extrovertiert [sic!] und gefühlsbetont. \\
+		20 & & I do not like to put the time into doing things well. &	Ich mag es nicht, viel Zeit darauf zu verwenden, Dinge gut zu machen. \\
+		\addlinespace
+		21 & & The feelings of others are unimportant to me. &	Die Gefühle anderer sind für mich unwichtig.\\
+		22 & & I hide my feelings from others. 			& Ich verberge meine Gefühle vor anderen. \\
+		23 & (-) & I work hard on everything I do. 		& Bei allem, was ich tue gebe ich mir viel Mühe.\\
+		24 &(-)  & I do things to make others feel good. &	Ich tue Dinge, damit andere sich wohlfühlen.\\
+		\bottomrule
+		\insertTableNotes 
+	\end{longtabu}
+\end{ThreePartTable}
+
+\section{Deviation from Preregistration}
+
+The present analysis was preregistered on the Open Science Framework \todo{add link}.
+The preregistration was written in ignorance of the data to avoid any HARKING (hypothesizing after results known).\todo{add link to explain what harking is or why to preregister blindly}.
+After knowledge of the data a large proportion of the planned analyses were deemed unfeasible due to limited variability of the data at hand.
+
+Specifically, the planned analyses included a psychological network analysis with the ICU subscales as specified by the LPE specifier together with several indicators of anti-social behavior.
+The following table \ref{tab:descriptives_all} shows the descriptive statistics for all items that were originally planned to be entered into the analysis.
+
+
+	\begin{ThreePartTable}
+	\begin{TableNotes}
+		 \item \textit{Note.} 
+		 \item ICU = Inventory of Callous Unemotional Traits, CADRI = Conflict in Adolescent Dating Relationships Inventory.
+	\end{TableNotes}
+	\begin{longtabu} to \linewidth {>{\raggedright}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X}
+		\caption{\label{tab:descriptives_all}\protect\linebreak[1]
+			\textit{Descriptive Statistics for all Intended Nodes of a Preregistered Psychological Network Analysis}}\\
+		\toprule
+		\multicolumn{1}{c}{Item} & \multicolumn{1}{c}{\textit{n}} & \multicolumn{1}{c}{\textit{M}} & \multicolumn{1}{c}{\textit{SD}} & \multicolumn{1}{c}{Median}& \multicolumn{1}{c}{Min}& \multicolumn{1}{c}{Max}& \multicolumn{1}{c}{Skew} & \multicolumn{1}{c}{Kurtosis} & \multicolumn{1}{c}{\textit{SE}} \\
+		\midrule  		
+  		Battery Student & 3857 & 0.21 & 0.60 & 0.00 & 0 & 5 & 4.22 & 23.64 & 0.01 \\ 
+  		Tease Student & 3852 & 0.49 & 0.90 & 0 & 0.00 & 5 & 2.50 & 7.43 & 0.01 \\ 
+  		Vandalize & 3853 & 0.05 & 0.31 & 0.00 & 0 & 5 & 8.63 & 95.19 & 0.01 \\ 
+  		Extort & 3853 & 0.01 & 0.17 & 0.00 & 0 & 5 & 18.88 & 409.48 & 0.00 \\ 
+  		Exclude & 3848 & 0.12 & 0.43 & 0.00 & 0 & 5 & 5.19 & 35.09 & 0.01 \\ 
+  		Ignore & 3854 & 0.36 & 0.83 & 0.00 & 0 & 5 & 3.44 & 14.20 & 0.01 \\ 
+  		Ridicule teacher & 3851 & 0.18 & 0.65 & 0.00 & 0 & 5 & 5.01 & 29.10 & 0.01 \\ 
+  		Mean Teacher & 3856 & 0.12 & 0.55 & 0.00 & 0 & 5 & 6.09 & 42.42 & 0.01 \\ 
+  		Battery Teacher & 3858 & 0.01 & 0.22 & 0.00 & 0 & 5 & 19.11 & 391.96 & 0.00 \\ 
+  		\addlinespace
+  		Vehicle\ Theft & 3853 & 0.01 & 0.09 & 0 & 0.00 & 1 & 10.34 & 105.04 & 0.00 \\ 
+  		Larceny & 3848 & 0.01 & 0.11 & 0.00 & 0 & 1 & 9.08 & 80.48 & 0.00 \\ 
+  		Burglary & 3852 & 0.00 & 0.06 & 0.00 & 0 & 1 & 16.49 & 270.00 & 0.00 \\ 
+  		Battery & 3840 & 0.05 & 0.21 & 0.00 & 0 & 1 & 4.22 & 15.80 & 0.00 \\ 
+  		Battery mult perp & 3844 & 0.01 & 0.10 & 0.00 & 0 & 1 & 10.04 & 98.85 & 0.00 \\ 
+  		Armed Battery & 3845 & 0.00 & 0.07 & 0 & 0.00 & 1 & 14.93 & 221.06 & 0.00 \\ 
+  		Robbery & 3845 & 0.00 & 0.07 & 0.00 & 0 & 1 & 14.11 & 197.27 & 0.00 \\ 
+  		Extortion & 3847 & 0.00 & 0.05 & 0.00 & 0 & 1 & 21.85 & 475.63 & 0.00 \\ 
+  		Sexual Assault & 3847 & 0.00 & 0.07 & 0 & 0.00 & 1 & 14.94 & 221.18 & 0.00 \\ 
+  		\addlinespace
+  		CADRI01 & 1435 & 0.47 & 0.77 & 0.00 & 0 & 3 & 1.73 & 2.53 & 0.02 \\ 
+  		CADRI02 & 1421 & 0.53 & 0.75 & 0.00 & 0 & 3 & 1.42 & 1.55 & 0.02 \\ 
+  		CADRI03 & 1429 & 0.05 & 0.28 & 0.00 & 0 & 3 & 6.99 & 53.94 & 0.01 \\ 
+  		CADRI04 & 1433 & 0.04 & 0.26 & 0.00 & 0 & 3 & 7.77 & 67.81 & 0.01 \\ 
+  		CADRI05 & 1432 & 0.06 & 0.28 & 0.00 & 0 & 3 & 5.59 & 36.14 & 0.01 \\ 
+  		CADRI06 & 1433 & 0.07 & 0.33 & 0.00 & 0 & 3 & 5.30 & 31.96 & 0.01 \\ 
+  		CADRI07 & 1434 & 0.07 & 0.35 & 0.00 & 0 & 3 & 6.32 & 44.44 & 0.01 \\ 
+  		CADRI08 & 1432 & 0.07 & 0.34 & 0.00 & 0 & 3 & 5.76 & 37.46 & 0.01 \\ 
+  		CADRI09 & 1433 & 0.02 & 0.20 & 0.00 & 0 & 3 & 10.77 & 129.00 & 0.01 \\ 
+  		CADRI10 & 1432 & 0.01 & 0.14 & 0.00 & 0 & 3 & 17.27 & 331.05 & 0.00 \\ 
+		\bottomrule
+\insertTableNotes 
+\end{longtabu}
+\end{ThreePartTable}
+
+These behavioural outcomes were chosen based on previous research. 
+They include typical outcomes assessed in combination with the ICU such as aggression and non-violent delinquency (theft, vandalism) \parencite{cardinale_reliability_2017}.
+\textcites{andershed_psychopathic_2012} have assessed a large community sample of Swedish 8th grade students.
+They they have used items similar in content as well as scaling to assess various indicators of problematic conduct. CU traits were assessed using the CU factor od the YPI.
+The correlations and item variability they obtained in this highly comparable design were still relatively small (as can be expected in a community sample) but still sufficient to carry out the analyses I had intended. 
+I can only speculate to the reasons of insufficient variability and association compared to the Swedish study. 
+The Swedish study had a very high response rate (93\% compared to 63.5\%). 
+It could hence be that multiple forms of selection bias played a role.
+Principles from schools with high conduct problems could have refused participations. 
+Parents from students with conduct problems could have refused parental consent. 
+Students With conduct problems could have been absent with a higher probability on the day the survey was taken or refused participation themselves.
+  
+
+	\begin{ThreePartTable}
+	\begin{TableNotes}
+		\item \textit{Note.} 
+		\item ICU = Inventory of Callous Unemotional Traits, CADRI = Conflict in Adolescent Dating Relationships Inventory.
+		\item \textit{p}<.001 for all correlations. Correlations are polychoric for ordered categorical measures (with less than  categories) and biserial for dichotomous items.
+	\end{TableNotes}
+	\begin{longtabu} to \linewidth {>{\raggedright}X>{\centering}X>{\centering}X>{\centering}X>{\centering}X}
+		\caption{\label{tab:correlations all_all}\protect\linebreak[1]
+			\textit{Correlations of all Intended Nodes of a Preregistered Psychological Network Analysis with ICU Subscales}}\\
+		\toprule
+		\multicolumn{1}{c}{Item}& \multicolumn{1}{c}{Uncaring} & \multicolumn{1}{c}{Unemotional} & \multicolumn{1}{c}{Callous} & \multicolumn{1}{c}{Careless}\\ 
+		\midrule
+		Battery student & -0.01 & -0.01 & -0.02 & 0.00 \\ 
+		Tease Student & -0.01 & -0.00 & -0.02 & -0.04 \\ 
+		Vandalize & -0.01 & -0.02 & -0.00 & -0.00 \\ 
+		Extort & 0.01 & 0.00 & 0.03 & 0.01 \\ 
+		Exclude & 0.02 & 0.03 & -0.00 & -0.01 \\ 
+		Ignore & -0.02 & 0.00 & -0.02 & -0.03 \\ 
+		Ridicule Teacher & 0.01 & 0.03 & 0.00 & 0.02 \\ 
+		Mean Teacher & 0.01 & 0.02 & 0.01 & 0.02 \\ 
+		Battery Teacher & -0.01 & 0.01 & -0.00 & -0.01 \\ 
+		Vehicle Theft & 0.17 & -0.04 & 0.10 & 0.09 \\ 
+		Larceny & -0.01 & -0.07 & 0.12 & 0.02 \\ 
+		Burglary & 0.05 & 0.03 & 0.03 & 0.09 \\ 
+		Battery & -0.01 & 0.00 & 0.01 & 0.03 \\ 
+		Battery mult perp & -0.08 & -0.07 & -0.02 & -0.05 \\ 
+		Armed battery & -0.07 & -0.03 & 0.05 & 0.03 \\ 
+		Robbery & 0.13 & -0.04 & 0.13 & 0.06 \\ 
+		Extortion & -0.07 & -0.09 & 0.10 & 0.06 \\ 
+		Sexual Assault & -0.08 & -0.08 & 0.01 & -0.05 \\ 
+		CADRI01 & -0.02 & -0.02 & -0.04 & 0.01 \\ 
+		CADRI02 & 0.03 & -0.00 & 0.01 & 0.05 \\ 
+		CADRI03 & -0.04 & -0.01 & -0.06 & -0.09 \\ 
+		CADRI04 & -0.04 & -0.05 & -0.01 & -0.02 \\ 
+		CADRI05 & 0.01 & 0.02 & 0.03 & -0.03 \\ 
+		CADRI06 & -0.01 & 0.00 & 0.03 & 0.01 \\ 
+		CADRI07 & 0.03 & -0.02 & 0.01 & -0.03 \\ 
+		CADRI08 & 0.03 & -0.02 & 0.02 & -0.00 \\ 
+		CADRI09 & -0.08 & -0.09 & -0.07 & -0.08 \\ 
+		CADRI10 & 0.06 & -0.12 & 0.04 & 0.12 \\ 
+		\bottomrule
+\insertTableNotes 
+\end{longtabu}
+\end{ThreePartTable}
+
+
+
+
+
+\section{Other constructs assessed in the Niedersachsensurvey}
+
+The participants answered questions and questionnaires comprising the following constructs:
+\setlength{\columnsep}{-0.2in}
+\begin{multicols}{3}
+	\begin{itemize}
+		\setlength{\itemsep}{0pt}%
+		\setlength{\parskip}{0pt}
+		\item Membership in groups, clubs and organizations
+		\item Sleep and wakeup time
+		\item Media consumption
+		\item Frequency of explicit movie consumption
+		\item View on male and female roles
+		\item Self-control
+		\item Empathy
+		\item Pro-social Behavior
+		\item Impulsivity
+		\item Depression
+		\item General anxiety
+		\item Somatic complaints
+		\item Number of sick days
+		\item Social support
+		\item Victimization of violent crimes
+		\item Victimization of non-violent crimes
+		\item Family constellation
+		\item Experiences of loss and separation
+		\item Household income
+		\item Parental education
+		\item Parental employment status
+		\item Parental warmth and parental control
+		\item Corporal punishment
+		\item Parental partner violence
+		\item Parental physical child abuse
+		\item Neighborhood assessment
+		\item Leisure time activities
+		\item Illegal activities of friends
+		\item Intimate partner history
+		\item Intimate partner violence
+		\item Teacher targeted aggression
+		\item School grades
+		\item Opinions about school, teachers and fellow students
+		\item ADHD diagnosis
+		\item Drug education
+		\item Conflict resolution training
+		\item Parental involvement in school activities
+		\item Weapons in school
+		\item Truancy
+		\item School based violence victimization
+		\item School based violent perpetration
+		\item Cyberbullying victimization
+		\item Cyberbullying perpetration
+		\item Gambling
+		\item Religion and religiosity
+		\item Alcohol and drug consumption
+		\item Ethnic origin
+		\item Computer and videogame consumption and pathology
+		\item Deliberate ...
+		\item Police contact
+		\item Illegal activities
+		\item Life satisfaction
+		\item Islamic radicalization
+		\item Intergroup relations
+		\item Xenophobia
+		\item Political extremism
+	\end{itemize}
+\end{multicols}
+
+\section{Analysis Code}
+The analysis code is available at \url{https://github.com/annloh/ICUmultinet}
+The following information is an excerpt of the readme and provides an overview of the code structure
+Figure \todo{add figure and reference} provides an overview to the folder structure of the code.
+This structure is identical on github as well as for the files submitted along with the thesis.
+However, the git hub repository does not contain the raw data. Note that the data provided is not the full survey data but merely the subset required to reproduce the present manuscript.
+
+\section{Deviation from the preregistration}
+The preregistration lists a number of other constructs and scales that were planned for inclusion in the covariate network.
+Upon closer inspection I decided to not include those variables/scales in the analysis.
+Justification for this step is based in theory as well as methodology.
+The construct of dating violence is based on the premise of a romantic relationship.
+Consequently the scale was only assessed for participants who have been in a romantic relationship within 12 months prior to assessment.
+A partial correlation network with items that are simultaneously indicators for the presence of a romantic relationship are likely 
+not interpretable with regard to the construct they were intended to measure (dating violence). I hence decided to not include the CADRI scale in the analysis.
+\todo{add justification for exclusion of violent perpetration items}.
+Due to a software error in the \texttt{bootnet} package the glasso analysis could not be conducted without non-paranormal transformation and RIC based penalization.
+
+
+
+
+\subsection{README}
+The analysis code has the following structure
+
+It is based on the idea of a research compendium as suggested by \parencite{marwick_packaging_2018} and was created using the R package \texttt{rrtools}.
+
+\subsubsection{.\textbackslash analysis \textbackslash data \textbackslash raw\_data\textbackslash}
+This directory contains the raw data as well as the SPSS syntax used to obtain this selection of items from the original survey data.
+(Not on github.)
+
+\subsubsection{.\textbackslash R}
+This directory contains all R scripts pertaining to the analysis.
+
+\paragraph{main.R}
+Running this R-script will completely reproduce the analysis, given, the availability of the datafile.
+It sources all other scripts and outputs all graphs and tables.
+Formatting of plots and tables might slightly differ from the manuscript version.
+These differences are purely cosmetic.
+
+Warning: The present analysis is computationally expensive.
+Running the analysis on a personal computer will take multiple days.
+
+\paragraph{dependencies.R}
+This R-script specifies the required packages.
+It includes an installer function that will automatically install packages should they not be available.
+If you do not want any packages installed automatically do not run this script. (Nor main.R which will source this script.)
+
+\paragraph{import\_and\_cleaning.R}
+Imports data from SPSS. Prepares data for analysis by definition of datasets for each scale. Definition of subscales.
+Specification of item wordings and recoding inverted items.
+
+\paragraph{imputation.R}
+Conducts single imputation of missing data.
+
+\paragraph{descriptives.R}
+Computes descriptive statistics and performs item analyses for all scales.
+
+\paragraph{multiverse\_definition.R}
+Defines a list of all parameter constellations to be used for teh multi-verse analysis.
+Furthermore, a data frame with grouping variables is defined which is latter used to 	differentiate the results.
+
+\paragraph{psychometric\_network.R}
+Conducts a pszchometric network analysis of all ICU items.
+
+\paragraph{covariate\_network.R}
+Conducts a network analysis of the LPE subscales and covariates.
+
+\paragraph{plotting.R}
+Creates all plots from the manuscript.
+
+\paragraph{tables.R}
+Produces tables from the manuscript.
+
+\subsection{Reproducibility measures}
+As suggested by Epskamp \todo{add reference} the \texttt{sessionInfo()}
+is stated below. It containes all packages loaded during the analysis as well as additional information on the system the analyses were implemented on.
+
+While this information does not guarantee reproducibility it increases the likelihood of computational reproduction of the results presented here.
+All random seeds are provided directly in the code.
+
+This report was generated on $\Sexpr{Sys.time()}$ using the following computational environment and dependencies:
+
+
+<<label=colophon, echo=FALSE, cache=FALSE,  include = FALSE>>=
+if ("devtools" %in% installed.packages()) devtools::session_info()
+@
+
+The current Git commit details are:
+
+<<label=git, echo=FALSE, cache=FALS, include = FALSE>>=
+if ("git2r" %in% installed.packages() & git2r::in_repository(path = ".")) git2r::repository(here::here())
+@
+
+

@@ -1,0 +1,162 @@
+
+# Data code book ----------------------------------------------------------
+
+# read the dataset
+
+
+# Data Code Book ----------------------------------------------------------
+
+
+lfdnr
+alter #renamed to age
+
+
+# Gender ------------------------------------------------------------------
+
+geschl #renamed to gender
+
+# 1 = male
+# 2 = female
+
+# Relationship filter -----------------------------------------------------
+
+# Ich hatte in den leten 12 Monaten keinen Partner
+# 0 = nicht angekreuzt
+# 1 = angekreuzt
+
+nopart
+
+# CADRI -------------------------------------------------------------------
+
+# 12 Monatespraevalenz
+
+# 1 = "nie"
+# 2 = "1-2 mal"
+# 3 = "3-5 mal"
+# 4 = "6-mal oder oefter"
+
+datei01
+datei02
+datei03
+datei04
+datei05
+datei06
+datei07
+datei08
+datei09
+datei10
+
+
+# ICU ---------------------------------------------------------------------
+
+# 1 = "stimmt gar nicht"
+# 2 = "stimmt etwas"
+# 3 = "stimmt meistens"
+# 4 = "stimmt genau"
+
+trait01
+trait02
+trait03
+trait04
+trait05
+trait06
+trait07
+trait08
+trait09
+trait10
+trait11
+trait12
+trait13
+trait14
+trait15
+trait16
+trait17
+trait18
+trait19
+trait20
+trait21
+trait22
+trait23
+trait24
+
+
+# School based bullying ---------------------------------------------------
+
+# 1 = "nie"
+# 2 = "1-oder 2-mal"
+# 3 = "3- bis 6-mal"
+# 4 = "mehrmals pro Monat"
+# 5 = "einmal pro Woche"
+# 6 = "mehrmals pro Woche"
+
+terrw01 # Ich habe einen anderen Schüler absichtlich geschlagen oder getreten.
+terrw03 # Ich habe einen anderen Schüler gehänselt oder hässliche Dinge über ihn gesagt.
+terrw04 # Ich habe Sachen von einem anderen Schüler absichtlich kaputtgemacht.
+terrw06 # Ich habe einen anderen Schüler erpresst und gezwungen, Geld oder Sachen herzugeben.
+terrw12 # Ich habe Freunde von mir aufgefordert, damit aufzuhören, mit einem anderen Schüler weiter etwas zu unternehmen.
+terrw13 # Ich habe einen anderen Schüler wie Luft behandelt und absichtlich nicht mehr beachtet.
+terrw14 # Ich habe eine Lehrkraft vor anderen Schülern lächerlich gemacht.
+terrw15 # Ich habe eine Lehrkraft richtig gemein behandelt.
+terrw16 # Ich habe eine Lehrkraft geschlagen.
+
+
+# Battery -----------------------------------------------------------------
+
+
+# 1 = "nein"
+# 2 = "ja"
+
+dbs02lj # KV ohne Waffe: In letzten 12 Monaten getan
+dbs31lj # KV mit mehreren Personen: In letzten 12 Monaten getan
+dbs32lj # KV mit Waffe: In letzten 12 Monaten getan
+
+
+
+# Robbery -----------------------------------------------------------------
+
+# 1 = "nein"
+# 2 = "ja"
+
+dbs10lj # Raub: In letzten 12 Monaten getan
+dbs29lj # Erpressung: In letzten 12 Monaten getan
+
+
+# Theft -------------------------------------------------------------------
+
+# 1 = "nein"
+# 2 = "ja"
+
+dbs01lj # Ladendiebstahl: In letzten 12 Monaten getan
+dbs07lj # Fahrzeugdiebstahl: In letzten 12 Monaten getan
+dbs25lj # Diebstahl: In letzten 12 Monaten getan
+
+
+# Vandalism ---------------------------------------------------------------
+
+# 1 = "nein"
+# 2 = "ja"
+
+dbs05lj # Sachbeschädigung: In letzten 12 Monaten getan
+dbs15lj # Graffiti: Lebenszeitprävalenz
+
+
+# Breaking and entering ---------------------------------------------------
+
+# 1 = "nein"
+# 2 = "ja"
+
+dbs20lj # Einbruchsdiebstahl: In letzten 12 Monaten getan
+
+
+
+# Sexual  assault ---------------------------------------------------------
+
+dbs27lj # sex. Gewalt/Belästigung: In letzten 12 Monaten getan
+
+
+# Number of participants in original dataset ------------------------------
+
+3878
+
+
+

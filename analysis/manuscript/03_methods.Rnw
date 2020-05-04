@@ -1,0 +1,282 @@
+%3. Methode.
+% Stichprobe. Beschreiben Sie den Stichprobenumfang sowie die zentralen
+% demographischen Merkmale der Teilnehmerinnen und Teilnehmer (u. a. Alter und
+% Geschlecht).
+% Aus der Darstellung der Theorie sollte zudem hervorgegangen sein,
+% warum der vorhandene Datensatz genau diese Personen betrachtet.
+
+% Durchführung.
+% Wie wurde die Untersuchung durchgeführt?
+% Wie sah die Untersuchungssituation aus?
+% Wie wurde die Stichprobe rekrutiert?
+
+% Instrumente. Beschreiben Sie die für Ihre Auswertungen relevanten
+% Instrumente. Berichten Sie Beispielitems, Antwortformate, psychometrische Kennwerte
+% und Ihr Vorgehen bei der Berechnung von Skalen- oder anderweitig aggregierten
+% Kennwerten. Sofern Sie etablierte Skalen genutzt haben, müssen diese nicht
+% gesondert faktoranalytisch geprüft werden. Es genügt hier, die Skalen anhand der
+% Vorgaben der Autoren zu bilden und die entsprechenden Kennwerte (z. B. Mittelwert,
+% Streuung, interne Konsistenz) im Ergebnisteil (s. unten) zu berichten und ggf. im
+% Diskussionsteil (s. unten) zu erörtern.
+
+% Statistische Analysen. In diesem Abschnitt geben Sie einen kurzen
+% Überblick über die von Ihnen gewählten Analysemethoden und
+% begründen Sie Ihre
+% Auswertungsstrategie und die von Ihnen verwendeten statistischen Verfahren.
+% Berichten Sie hier noch keine Ergebnisse, sondern stellen Sie nur kurz die Verfahren
+% und das Vorgehen vor!
+
+% Aus dem Bewertungsschema:
+
+% Stichprobe wird angemessen unter Angabe demographischer Merkmale beschrieben.
+% Die Durchführung ist detailliert und verständlich dokumentiert.
+% Die Instrumente werden vorgestellt unter Angabe von Quellen und Beispielitems.
+% Psychometrische Kennwerte der Messinstrumente werden berichtet.
+% Das Untersuchungsdesign wird transparent beschrieben.
+% Die Konstrukte werden sinnvoll operationalisiert.
+% Alle Untersuchungsvariablen werden transparent definiert.
+% Prozeduren der Datenaufbereitung werden berichtet und ggf. begründet.
+% Auswertungsstrategie wird nachvollziehbar dargelegt, ist angemessen und gut begründet.
+% Der methodische Aufwand bzw. die Komplexität der Analysen ist angemessen.
+
+
+ % !Rnw root = 00_main.Rnw
+
+\section{Methods}
+The data analyzed and presented in this thesis are drawn from the Niedersachsen survey \parencite{bergmann_jugendliche_2017},
+which conducted a large representative student survey among 9th grade students in Lower Saxony, Germany.
+The survey was conducted in spring 2015 by the Criminological Research Institute of Lower Saxony (Kriminologische Forschungsinstitut Niedersachsen - KFN) and is part of a periodically conducted representative survey with the objective of monitoring unrecorded crime.
+Main survey topics are delinquency, and victimization as well as associated risk factors.
+A detailed overview of survey domains can be found in appendix \todo{add appendix reference}.
+The main body of the manuscript only describes the questionnaire parts pertaining to the present research question.
+
+\subsection{Participants and Procedures}
+
+\subsubsection{Sampling Procedure}
+A random sample of \textit{K} = 672 classrooms was drawn from the total of 9th grade classrooms taught in the 2014/2015 school year.
+Sampling was stratified by school type.
+School principals were contacted for recruitment, resulting in \textit{k} = 545 classrooms indicating willingness to participate, which corresponds to a participation rate of 81.1\% on the classroom level.
+Of the \textit{N} = 12,650 students attending the participating classrooms 84.4\% (\textit{n} = 10, 638) filled in the survey.
+Reasons for non-participation can be obtained from the flow-chart in figure \ref{fig:flowchart}.
+
+\begin{figure}[h!]
+	\caption{\label{fig:flowchart}\protect\linebreak[1]\textit{Flow Chart Illustrating  the Sampling Process}}
+		\centering
+	\includegraphics[width=\textwidth]{../figures/flowchart.png}
+	\caption*{\textit{Note.} Figure adapted from \parencite{kliem_factor_2019}.}
+\end{figure}
+
+The survey was modularized, i.e. there were different versions of the survey randomly assigned to the participants.
+The ICU was only part of 1/3 of the distributed survey forms.
+Accordingly, \textit{n} = 4,125 students received a survey version containing this scale.
+The survey was approved by the federal school board of Lower Saxony (Nieders\"achsische Schukbeh\"orde) as well as the Ministry od Education of Lower Saxony (Nieders\"achsisches Kultusministerium).
+Written parental consent was obtained for each student prior to student participation.
+Students were informed, that their participation was entirely voluntary and anonymous.
+Students could refuse participation independent of their parent's consent.
+Students additionally had the option to skip individual questions.
+Further details regarding the sampling procedure can be obtained from \parencite{bergmann_jugendliche_2017}
+
+\subsubsection{Survey Setting}
+The survey was conducted in the classroom setting during school time.
+It was carried out by trained research assistants.
+A research assistant as well as a teacher were present during the survey.
+Their role was to ensure orderly conduct but not to interfere with the students filling in the forms.
+
+
+\subsubsection{Sample Descriptives}
+The final sample for the present analysis consisted of \textit{N} = $\Sexpr{sample_size}$ 9th grade students.
+Students age ranged from $\Sexpr{age_min}$ to $\Sexpr{age_max}$ years with a mean age of \textit{M} = $\Sexpr{age_mean}$ years (\textit{SD} = $\Sexpr{age_sd}$).
+The self-reported gender was $\Sexpr{prop_girls}$\% female (\textit{n} = $\Sexpr{n_girls}$  individuals) and $\Sexpr{prop_boys}$\% male (\textit{n} = $\Sexpr{n_boys}$ individuals).
+Participants could not indicate a non-binary option.
+
+\subsection{Measures}
+
+
+\subsubsection{Callous-Unemotional Traits}
+Callous-unemotional traits  were assessed using the German translation of the Inventory of callous unemotional traits \parencite{essau_callous-unemotional_2006}.
+The scale comprises 24 self-report items rated on a 4-point Likert scale ranging from "Not at all true" (0) to "Definitely true" (3).
+The internal consistency (Cronbach’s alpha) for the three subscales of the German version obtained in a similar sample are reported as: $\alpha = .64$ (unemotional),
+$\alpha = .70$ (callousness) and $\alpha = .73$ (uncaring) \parencite{essau_callous-unemotional_2006}. 
+A recent large Meta-Analysis by Cardinale and Marsh \parencite*{cardinale_reliability_2017} confirms acceptable reliability based on a pooled total sample of 27,947
+subjects: $\alpha = .71$ (unemotional), $\alpha = .75$ (callousness) and $\alpha = .80$ (uncaring). 
+These findings are in line with the Cronbach’s alphas found in the present sample:
+$\alpha = .71$ (unemotional),  $\alpha = .72$ (callousness) and  $\alpha = .79$ (uncaring). \todo{check whether these alphas are actually correct}
+
+
+\section{Data Analysis}
+Data analysis was be conducted in the R statistical programming environment \parencite{R} (version 3.6.3). 
+Further information regarding the computational environment as well as documentation of the corresponding analysis 
+code can be obtained from appendix \todo{add reference to appendix}. 
+
+\subsection{Data Processing and Cleaning}
+Data was imported into R from SPSS. 
+ICU items were recoded to comply with the intended original scaling.
+They were furthermore inverted as intended and renamed. 
+%The anti-social behavior items showed a large number of missing value as they were follow-up items to identically worded filter item asking whether the target behavior had ever been excibited.
+%The missing values pertaining to the negation of the filter item where hence recoded to "never".  
+
+\subsection{Missing Data Handling}
+As the present dataset has been used for previous published research we will handle missing data in the same manner to obtain matching completed data.
+The data was imputed using single imputation and predictive mean matching as implemented in the R package \texttt{mice}, \nptextcite{mice}).
+All ICU items as well as age and gender was used to predict the missing values.
+%The additional variables analyzed for the present study will be imputed in a similar manner, i.e. only the ICU items will be used for missing value prediction.
+I have abstained from multiple imputation in the present study as I do not feel that the gain in precision justifies the added layer of complexity.
+The focus of the present study is exploratory rather than confirmatory in nature and hence does not rely on point estimates and their corresponding standard error.
+
+\subsection{Data Preparation for Network Analysis}
+There are several recommendation of how to best prepare data for a network analysis. 
+Especially regarding violations of multivariate-normality.
+As the data was in clear violation of the normality assumption it was transformed using the non-paranormal transformation \parencite{liu_nonparanormal_2009}.
+All items in the present analysis could be characterized as ordinal for which the use of polychoric correlations are recommended whenever analyses are based on correlation matrices.
+Analyses comprising non-transformed correlations were also incorporated in the multi-verse. 
+This corresponds to current findings indicating that the use of polychoric correlations could result in spurious negative edges \parencite{epskamp_estimating_2018}.
+Epskamp and colleagues hence recommend comparing the results obtained using polychoric correlations to those obtained using Spearman correlations.  
+
+Entering items with high topological overlap as nodes to the same network can be problematic.
+The network edges represent partial correlations i.e.~associations between items taking into account all other items in the network.
+Items with a high overlap will make it unlikely that there are any unique associations left to account for.
+We hence searched for potential pairs of redundant nodes, that is nodes that are highly inter-correlated and that correlate to the same degree with other variables.  
+This search was conducted by application of the Hittner method for comparing dependent correlations \parencite{hittner_monte_2003} as implemented in the \texttt{goldbricker()} function from the \texttt{networktools} package \parencite{networktools}.
+This procedure did not indicate any considerable item overlap.
+
+%\subsection{Statistical Analysis}
+
+%Partial correlation networks were fit to a node sets comprising all 24 ICU items.
+%I will refer to the analysis and results corresponding to this node set as "psychometric network" or "ICU network"
+
+%Set (ii) comprises the aggregated ICU sub-scales \textit{"Lack of remorse or guilt"} (callous: \#2, \#5, \#9, \#13, \#16, \#18), 
+%\textit{"Callous lack of empathy"}  (uncaring: \#4, \#8, \#12, \#17, \#21, \#24), 
+%\textit{"Shallow or deficient affect"} (unemotional: \#1, \#6, \#10, \#14, \#19, \#22), 
+%\textit{"Unconcerned about performance"} (careless: \#3, \#7, \#11, \#15, \#20, \#23) as well as measures of bullying behavior.
+%The networks stemming from this node set will be evaluated from a psychological network perspective investigating the unique associations between nodes as well as the roles of certain nodes within the network. The specific parameters that will be interpreted for this purpose are outlined below.
+
+
+\subsection{Descriptive Statistics}
+Descriptives statistics were computed for all demographic variables.
+Basic psychometric scale characteristics were be computed for the ICU scale (item mean, inter-item correlations, item difficulty, item-rest correlations).
+Correlations on subscale level are furthermore reported.
+
+
+\subsection{Network Estimation}
+
+Psychological network analysis is a fairly recent technique with a multitude of current methodological developments.
+To incorporate the effects of several potentially applicable analytical decisions I conducted a multi-verse analysis. 
+Table \ref{tab:decisions} contains an overview of the decisions and their corresponding options which are likely to be justifiable given the data at hand.
+
+\todo{fix table formatting}
+
+\begin{ThreePartTable}
+	\begin{TableNotes}
+		\item \textit{Note.} 
+		 \item MGM = Mixed Graphical Model ; GGM = Gaussian Graphical Model; EBIC~=~extended Bayesian information criterion; CV~=~cross-validation; RIC~=~rotation information criterion; StARS~=~stability approach to regularization selection.
+	\end{TableNotes}
+	\begin{longtabu} to \linewidth {
+			X[4,l]
+			X[4,l]
+			X[4,l]}
+		\caption{\label{tab:decisions}\protect\linebreak[1]
+			\textit{Overview of defensible analytical decisions}} \\
+		\toprule
+		\multicolumn{1}{l}{Decisions} & \multicolumn{1}{l}{Options} & \multicolumn{1}{l}{References}\\
+		\midrule
+					Data transformation            & none; non-paranormal transformation    & \nptextcite{liu_nonparanormal_2009}          \\
+					Network estimation             &                                        &  \\
+					~~Correlation type               & Spearman, polychoric                    &  \nptextcite{epskamp_tutorial_2018}      \\
+					~~Modeling approach              & Mixed Graphical Models (MGM),          &  \nptextcite{mgm}\\
+					                               & Gaussian Graphical Models (GGM)        &  \nptextcite{epskamp_tutorial_2018}         \\
+					~~Sparsity                       & Regularization                        &  \\
+					                               & Correction for multiple testing        & \nptextcite{williams_nonregularized_2019}   \\
+					~~Shrinkage tuning               & EBIC, CV, RIC, StARS                   & \nptextcite{wysocki_penalty_2019}          \\
+					~~EBIC tuning parameter $\gamma$ & 0, 0.25, 0.5                           & \nptextcite{epskamp_tutorial_2018}         \\ 
+		\bottomrule
+\insertTableNotes 
+\end{longtabu}
+\end{ThreePartTable}
+
+		The modeling decisions in table \ref{tab:decisions} above will be combined in as many ways as feasible.
+		However, the current implementation of modeling techniques does not feasibly allow for a combination in a full-factorial way.
+		Specifically, the default functions of the \texttt{bootnet} package  will be used with every reasonable parameter constellation.
+		Figure \ref{fig:multiverse} provides an overview of the implementation of the analytical decisions outlined above. 
+
+\begin{figure}[h!]
+	\caption{\label{fig:multiverse}\protect\linebreak[1]\textit{s}}
+	\centering
+	\includegraphics[width=\linewidth]{../figures/multiverse.png}
+%	\caption*{\textit{Note.} ICU = Inventory of Callous-Unemotional Traits.}
+\end{figure}
+
+		We will now  provide a detailed justification of each step in the analysis process explaining the necessary decisions to be made as well as the options available:
+
+		\paragraph{Data Transformation}
+		Epskamp \parencite*{epskamp_estimating_2018} recommends normalizing variables with a skewed distributions using the non-paranormal transformation \parencite{liu_nonparanormal_2009}.
+		As there are currently no clear guidelines regarding this transformation we will repeat each of the analyses with untransformed variables. %check that
+
+\paragraph{Modeling Approach}
+		The networks can be modeled using either Gaussian Graphical Models (GGM) or Mixed Graphical Models (MGM).
+		GGMs assumes Gaussian data i.e. following a normal distribution.
+		However, given the nature of the variables investigated in the present study such distributions seem unlikely for several nodes.
+		MGMs takes the ordinal nature of the data into account by estimating the node edges using exponential mixed graphical model as introduced by Yang and colleagues \parencite*{yang_mixed_2014}. 
+		We will incorporate both modeling techniques as the 4-point scale underlying the ICU represents the idea of a continuous variable.
+
+		\paragraph{Network Sparsity} To avoid the estimation of spurious edges and thereby overfitting the network to the data and increase the risk of false positives, network edges are often estimated using regularization.
+		Regularization shrinks edges and sets small edges to zero, producing a sparse and parsimonious model.
+		For the estimation of GGM the application of the graphical LASSO (GLASSO) is frequently recommended (a variant of the LASSO applicable to a correlation matrix).
+		Tuning of the shrinkage is commonly achieved choosing the model with the lowest Extended Bayesian Information Criterion (EBIC).
+		This approach is implemented in the \texttt{qgraph} package \parencite{epskamp_qgraph_2012}.
+		The EBIC itself relies on a tuning parameter $\gamma$.
+		This tuning parameter influences the trade-off between including false-positive edges and removing true edges.
+		The hyperparameter $\gamma$ is usually set between zero and 0.5 \parencite{epskamp_tutorial_2018} with 0.5 being the most frequently chosen setting.
+		With a $\gamma$ closer to 0.5, the EBIC will favor a simpler model containing fewer edges.
+		Consequently with a $\gamma$ near zero, the more the EBIC will favor a model with more edges.
+		We will incorporate $\gamma$'s of 0, 0.25 and 0.5 as part of the intended multi-verse analysis.
+
+		However, there is recent methodological work indicating that the EBIC might not be the ideal information criterion for tuning the shrinkage parameter \parencite{wysocki_penalty_2019}.
+		The multiverse analysis will hence also incorporate alternative methods (i.e. RIC, StAR) for determining optimal regularization.
+		These alternative approaches to selecting the shrinkage parameter for a GGM are implemented in the \texttt{huge} package \parencite{huge}.
+		The MGM estimation as implemented in the \texttt{mgm} package \parencite{mgm} regularizes the estimated edges via a LASSO penalty.
+		Here tuning of the penalization can be achieved via EBIC or cross-validation (CV).
+
+		Recent debate \parencite{williams_nonregularized_2019} questions the general need for regularization and argues that these techniques might only be justifiable when in deed a sparse network can be assumed to underly the data.
+		Hence following recent recommendations by Williams and colleagues \parencite{williams_nonregularized_2019} we will also estimate network models without regularization, albeit still controlling for the false-positive rate.
+
+		\subsection{Psychometric Network}
+
+		\paragraph{Edge Estimation}
+		For all primary analyses we will estimate the stability of edges with bootstrapped confidence intervals using the \texttt{bootnet} package \parencite{epskamp_estimating_2018}.
+		The number of bootstrap samples for this and all other bootstrap procedures will be determined by computational feasibility.
+
+		\paragraph{Node Statistics}
+		Node centrality measures (\textit{betweenness centrality}, \textit{closeness centrality} and \textit{node strength}) are traditionally interpreted as the relative influence of a node in the network.
+		More recently the interpretability of closeness centrality and betweenness centrality have been questioned and their use discouraged.
+		Node strength, (which is the sum of all weighted edges of a given node) however, has been found to be akin to factor loadings.
+		It hence offers information whether an item may belong to multiple latent dimensions.
+		The \textit{expected influence centrality} recently suggested by Robinaugh et al. \parencite*{robinaugh_identifying_2016} overcomes some of the shortcomings of other centrality measures and has been found to be strongly associated with observed node influence. 
+		It is computed in the same manner as node strength however maintaining the edge sign. It is hence especially useful in networks where negative edges are present.
+
+		\paragraph{Community Detection}
+		We will use community detection algorithms to assess the dimensionality of the psychometric network.
+		Nodes within an community are more strongly interconnected than they are with nodes from other communities.
+		Various algorithms exist that identify the number of communities (i.e. dimensions) in the network.
+		Unlike edge estimation, where the implementation of different estimation methods for the same set of edges, the application of different community detection algorithm of each of the estimated networks of the multi-verse would result in a very high number of subsets which would need to be interpreted individually. We will hence only implement the spinglas algorithm for community detection in each estimated network.
+
+
+		\paragraph{Bridge Nodes and Within Cluster Centrality}
+		We will  also identify important nodes that may serve as bridges between the communities by computing the \textit{bridge expected influence index} via the \texttt{bridge()} function of the \texttt{networktools} package \parencite{networktools}.
+		Bridge expected influence is the sum of the edge weights connecting a given node to all nodes in the other community or communities \parencite{jones_bridge_2019}.
+		Node Centrality measures can not only be computed with regard to the whole network, but also relative to their community.
+		Following the suggestions of Blanken and colleagues \parencite*{blanken_role_2018} we will analyse the edge weights a given node has within its community (\textit{stabilizing index}). 
+		We will use the four factors corresponding to the LPE specifier for this analysis.
+
+
+%		\subsection{Psychological Network Analysis of CU-Traits Facets and Anti-Social Behavior}
+%		The psychological network analysis comprising the second node set, as outlines above, will compute the same network statistics as outlined for the psychometric analysis apart from any estimates regarding the detection or centrality of communities.
+%
+%		\subsection{Stability and Robustness of Estimates}
+%		We will evaluate the stability of the node metrics by implementing a subset bootstrap procedure as implemented in the \texttt{bootnet} package \parencite{epskamp_estimating_2018}.
+%		We will also calculate the \textit{centrality stability correlation coefficient} (CS-coefficient) which represents the maximum proportion of participants that can be dropped while maintaining 95\% probability that the correlation between centrality metrics from the full data set and the subset data are at least .70.
+
+
+
+
+
+
