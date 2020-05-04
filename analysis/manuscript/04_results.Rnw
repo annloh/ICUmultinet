@@ -143,7 +143,7 @@ Edge width is proportional to the maximum edge which was ... \todo{add edge stat
 When interpreting the size of the edge weights it has to be taken into account that partial correlations are usually smaller than
 first-order correlations.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\caption{\label{fig:icu_net}\protect\linebreak[1]\textit{Medium ICU Network of all Implemented Estimators}}
 	\centering
 	\includegraphics[width=\linewidth]{../figures/ICU_network.pdf}
@@ -156,7 +156,7 @@ Figure \ref{fig:icu_node_indices} presents the node expected influence centralit
 
 As for the edge weights the histograms correspond to the bootstrap analyses whereas the points correspond to the point estimates per analysis.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\caption{\label{fig:icu_node_indices}\protect\linebreak[1]\textit{ICU Local Node Centrality Indices}}
 	\centering
 	\includegraphics[width=\linewidth]{../figures/node_centrality_icu.pdf}
@@ -167,7 +167,7 @@ As for the edge weights the histograms correspond to the bootstrap analyses wher
 \paragraph{Community Indices}
 Figure \ref{fig:meso_plot} depicts the meso-level node indices bridge expected influence and the stabilizing index. 
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\caption{\label{fig:meso_plot}\protect\linebreak[1]\textit{ICU Meso-Level Node Centrality Indices}}
 	\centering
 	\includegraphics[width=\linewidth]{../figures/meso_plot.pdf}
@@ -183,7 +183,7 @@ In six cases, three communities were detected.
 These correspond to the set of positively worded items, as well as the items sets (\#1, \#13, \#14, \#19) and (\#3, \#5, \#8, \#15, \#16, \#17, \#23, \#24).    
 The remaining three estimations detected 5 or 6 communities.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\caption{\label{fig:communities}\protect\linebreak[1]\textit{Detected communities (walktrap) for each different network estimation}}
 	\includegraphics[width=0.9\linewidth]{../figures/communities.png}
 	\caption*{\textit{Note.} ICU = Inventory of Callous-Unemotional traits.}

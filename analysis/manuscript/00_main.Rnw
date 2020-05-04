@@ -50,6 +50,8 @@
 			%showframe% show the page layout
 			]{geometry} %page margins
 
+\usepackage[section]{placeins}
+
 %---Formatting for bibliography
 
 \addbibresource{biblatex_bib.bib}	%for bibliography

@@ -75,9 +75,11 @@
 
 \section{Deviation from Preregistration}
 
-The present analysis was preregistered on the Open Science Framework \todo{add link}.
-The preregistration was written in ignorance of the data to avoid any HARKING (hypothesizing after results known).\todo{add link to explain what harking is or why to preregister blindly}.
-After knowledge of the data a large proportion of the planned analyses were deemed unfeasible due to limited variability of the data at hand.
+As the psychometric shortcomings of the ICU have been hypothesized to cause potential issues with the use of the CD LPE specifier \parencite{cardinale_reliability_2017} I had planned to investigate an additional research question focusing on the relationship of the LPE specifier (operationalized as the four ICU subscales). 
+The plan was to conduct a psychological network analysis of the LPE specifier and several indicators of anti-social behavior and conduct problems frequently assessed in combination of the ICU (e.g. aggression, theft, vandalism, bullying and sexual violence, see Table \ref{tab:items) for an overview). The research question for this analysis would have been whether the four specifiers show different unique associations to the indicators of anti-social behavior.
+The present analysis was preregistered on the Open Science Framework \url{https://osf.io/f65ac/}.
+The preregistration was written in ignorance of the data to avoid any HARKING (hypothesizing after results known).
+After knowledge of the data a large proportion of the planned analyses were deemed unfeasible due to limited variability of the data at hand and littel to no association of the of the constructs intended for analysis.
 
 Specifically, the planned analyses included a psychological network analysis with the ICU subscales as specified by the LPE specifier together with several indicators of anti-social behavior.
 The following table \ref{tab:descriptives_all} shows the descriptive statistics for all items that were originally planned to be entered into the analysis.
@@ -129,17 +131,17 @@ The following table \ref{tab:descriptives_all} shows the descriptive statistics 
 \end{longtabu}
 \end{ThreePartTable}
 
-These behavioural outcomes were chosen based on previous research. 
+These behavioral outcomes were chosen based on previous research. 
 They include typical outcomes assessed in combination with the ICU such as aggression and non-violent delinquency (theft, vandalism) \parencite{cardinale_reliability_2017}.
 \textcites{andershed_psychopathic_2012} have assessed a large community sample of Swedish 8th grade students.
 They they have used items similar in content as well as scaling to assess various indicators of problematic conduct. CU traits were assessed using the CU factor od the YPI.
-The correlations and item variability they obtained in this highly comparable design were still relatively small (as can be expected in a community sample) but still sufficient to carry out the analyses I had intended. 
+The correlations and item variability they obtained in this highly comparable design were still relatively small (as can be expected in a community sample) but still sufficient to carry out the analyses originally intended. 
 I can only speculate to the reasons of insufficient variability and association compared to the Swedish study. 
 The Swedish study had a very high response rate (93\% compared to 63.5\%). 
 It could hence be that multiple forms of selection bias played a role.
 Principles from schools with high conduct problems could have refused participations. 
 Parents from students with conduct problems could have refused parental consent. 
-Students With conduct problems could have been absent with a higher probability on the day the survey was taken or refused participation themselves.
+Students with conduct problems could have been absent with a higher probability on the day the survey was taken or refused participation themselves.
   
 
 	\begin{ThreePartTable}
@@ -187,7 +189,8 @@ Students With conduct problems could have been absent with a higher probability 
 \end{longtabu}
 \end{ThreePartTable}
 
-
+In addition to the major aspect discussed above,  there was another slight deviation from the preregistration:
+Due to a software error in the \texttt{bootnet} package the glasso analysis could not be conducted without non-paranormal transformation and RIC based penalization.
 
 
 
@@ -265,20 +268,6 @@ Figure \todo{add figure and reference} provides an overview to the folder struct
 This structure is identical on github as well as for the files submitted along with the thesis.
 However, the git hub repository does not contain the raw data. Note that the data provided is not the full survey data but merely the subset required to reproduce the present manuscript.
 
-\section{Deviation from the preregistration}
-The preregistration lists a number of other constructs and scales that were planned for inclusion in the covariate network.
-Upon closer inspection I decided to not include those variables/scales in the analysis.
-Justification for this step is based in theory as well as methodology.
-The construct of dating violence is based on the premise of a romantic relationship.
-Consequently the scale was only assessed for participants who have been in a romantic relationship within 12 months prior to assessment.
-A partial correlation network with items that are simultaneously indicators for the presence of a romantic relationship are likely 
-not interpretable with regard to the construct they were intended to measure (dating violence). I hence decided to not include the CADRI scale in the analysis.
-\todo{add justification for exclusion of violent perpetration items}.
-Due to a software error in the \texttt{bootnet} package the glasso analysis could not be conducted without non-paranormal transformation and RIC based penalization.
-
-
-
-
 \subsection{README}
 The analysis code has the following structure
 
@@ -332,11 +321,11 @@ Creates all plots from the manuscript.
 Produces tables from the manuscript.
 
 \subsection{Reproducibility measures}
-As suggested by Epskamp \todo{add reference} the \texttt{sessionInfo()}
+As per recent recommendations regarding reproducibility  \parencite{marwick_packaging_2018} the \texttt{sessionInfo()}
 is stated below. It containes all packages loaded during the analysis as well as additional information on the system the analyses were implemented on.
 
 While this information does not guarantee reproducibility it increases the likelihood of computational reproduction of the results presented here.
-All random seeds are provided directly in the code.
+All random seeds used in the analysis are provided directly in the code.
 
 This report was generated on $\Sexpr{Sys.time()}$ using the following computational environment and dependencies:
 

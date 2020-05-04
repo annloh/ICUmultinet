@@ -1,6 +1,6 @@
 # Result import to load to Latex
 
-source("../../R/dependencies.R")
+source("../../R/00_dependencies.R")
 
 load("demographics.RData")
 

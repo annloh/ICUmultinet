@@ -79,9 +79,7 @@ In combination with "kalt" (cold) item \#12 reads as if it refers to emotional e
 Most edges are positive (as would be expected) however, some negative edges can be observed.
 While most of these negative edges are very small and can likely be ignored two patterns seem to emerge.
 First, the highest number of negative edges are connected to nodes belonging to the "unemotional" dimension.
-The unemotional dimension of the ICU has received considerable criticism as being to focused on lack of emotional expression rather than ... \todo{continue arguments}
-researchers argued that these kinds of items might tap into unrelated constructs such as conditions on the autism spectrum (ASD) or mood disorders \todo{add reference}.
-As the prevalence of ASD and mood disorders is likely higher than psychopathy in the present at hand some of the negative edges could possibly be explained by this reasoning.
+The unemotional dimension of the ICU has received considerable criticism with the notion of the Unemotional items potentially tapping into different disorders \parencite{cardinale_reliability_2017}. This could explain the observed negative edges.
 Furthermore the items \#2, \#10, and \#13 which have previously been criticized for their poor psychometric properties have a high number of negative edges providing further evidence of them not measuring the intended construct. 
 
 \subsubsection{Node centrality}
@@ -93,7 +91,7 @@ Item \#6 "I do not show my emotions to others" is among the most influential in 
 Node centrality can be interpreted in various ways, from a more traditional latent variable perspective it is comparable to factor loadings. 
 Indeed the most central nodes in the present analysis do correspond to those with the highest factor loadings presented in a recent paper based on the same dataset
 \parencite{kliem_factor_2019}.
-From a network theory perspective central nodes excert a greater influence on the entire system. 
+From a network theory perspective central nodes exert a greater influence on the entire system. 
 These nodes might stabilize and "communicate" through their high number and or strong connections to other nodes.
 This logic might be exemplified by node \#21 "The feelings of others are unimportant to me", 
 not endorsing this will consequently lead to being concerned about other peoples feelings \#8,
@@ -110,15 +108,15 @@ This idea is developed further in the centrality indices on a meso-level.
 On the community level nodes with a high number of edges within the cluster are interpreted as stabilizing this facet whereas nodes with a high number of connections to other communities are termed
 bridges \parencite{robinaugh_identifying_2016} or communicating symptoms \parencite{blanken_role_2018}.
 
-From visual edge inspection it can be seen that the "unemotional" dimension as well as the "uncaring" dimension have a high number of strong within factor edges.
-This ....\todo{add results from community analysis}.
+From visual edge inspection it can be seen that the "unemotional" dimension as well as the "uncaring" dimension have a high number of strong within factor edges. This can have two possible interpretation. From a network perspective this would be interpreted as these indicators closely interacting and reinforcing each other. While this might partially be the case the second explanation, i.e. a high topological overlap due to very similar item wordings seems to be another possible explanation. In light of the debate surrounding the factor structure this is positive as \textcites{kliem_factor_2019} criticised the factor structure suggested by \textcites{essau_callous-unemotional_2006}
+to be inconsistent with regards to item content.
 
 These interpretation show that the theoretically assumed factor structure might by justified but very closely tied to fine semantic nuances that are not sustainable in translation. 
 They might further be influenced by item order and coding.
-  
+ 
  
 \subsubsection{Dimensionality}
-Two dominant communality patterns emerged.
+Two dominant communality patterns emerged from community detection with the walktrap algorithm.
 The community structure that was uncovered most frequently was a 2-community solution with all positively worded items in one community and all negatively worded items in a second.
 This is in line with multiple previous findings who discuss a strong influence of item wording on the factor structure of the ICU.
 
@@ -189,10 +187,9 @@ The comparably high amount of missingness (see \ref{fig:missingness}) supports t
 However, most of common method variance (unless unique to a pair of items) should be excluded by the use of partial correlations.
 
 The present study is a secondary analysis of existing data. 
-The data were not collected with the present study in mind. 
+The data hence were not collected with the present study in mind. 
 Hence the questionnaires analyzed in the present study might not ideally capture the intended constructs.
 Future studies employing network methodology should aim for measures that are tailored for use in a network analysis as well as in combination with the ICU.
-Longitudinal...
 
 The items assessing anti-social behavior were all school based. 
 This had the obvious advantage that their wording was close to the everyday experiences of the participants and these items hence showed reasonable prevalence for the present analysis.
@@ -219,20 +216,12 @@ In the context if network models careful phrasing of distinct items, that are me
 A focus solely on children who already have CD could limit advances in our understanding of how CD develops (Frick et al. 2014) \parencite{frick_can_2014}
 
 \subsubsection{Methodological Limitations}
-	- warn 
-
-From <https://link.springer.com/article/10.1007/s00127-016-1319-z> 
-- Suppressor effects (Lahey 2014)\parencite{lahey_what_2014}
-Possibility of circularity (lahey 2014) 
  
- Differential variability \parencite{terluin_differences_2016}
- Nodes showing large differences in variance.
- 
-  Finally, network analysis is a rather recent technique. 
+ Network analysis is a rather recent technique. 
  Hence, methodology is still under development and best-practice recommendations regularly changing.
  The R package \texttt{bootnet} which was used for most of the present analyses for example was updated xz times
  during the preparation of the manuscript at hand. 
- While utmost care was ... to carry out the analyses in accordance with current recommendations these 
+ While utmost care was taken to carry out the analyses in accordance with current recommendations these 
  recommendations might already be obsolete. Several critical methodological work that the present work builds 
  on was still in preprint status. While peer review arguably does not eliminate error these studies which have not undergone peer review might contain errors.
  
@@ -254,9 +243,9 @@ Possibility of circularity (lahey 2014)
  One of the most obvious shortcomings is certainly that conduct disorder was not assessed.
  As CU-traits are commonly used to subtype CD using them in isolation might seem theoretically unfounded.
  However, there are theoretical as well as empirical reasons to justify an investigation of CU-traits independent of CD.
- Based on the original conceptualization of Cleckley the "mask of sanity" might allow CU-only youths to remain under the radar of law enforcement
+ Based on the original conceptualization of Cleckley the \textit{mask of sanity} might allow CU-only youths to remain under the radar of law enforcement
  and mental health diagnoses. 
- It can furthermore be expected that the anwers obtained by self-report are a lot less truthful in patient ot forensic settings where participants might suspect negative consequences based on their answers,
+ It can furthermore be expected that the answers obtained by self-report are a lot less truthful in patient ot forensic settings where participants might suspect negative consequences based on their answers,
  even more so in a construct strongly related to lying and deception.
  A community-based survey as the one at hand might hence provide a more complete understanding of the construct
  compared to clinical or forensic samples. Findings by Andershed and colleagues in a community sample of adolescents furthermore found 
@@ -286,7 +275,7 @@ Especially gender is repeatedly mentioned as a moderating variable of influence 
  Generalizability of these findings is likely compromised given the large number of limitations of the present analysis.
  Given the ability of the present study to reproduce a large number of findings from the literature albeit these limitations attest to the stability of these issues.  
  
- The good news seems to be that, from a network perspective, the original ASPD items the ICU was based on seem to be indeed central to the symptoms represented by the whole scale.   
+ The good news seems to be that, from a network perspective, the original APSD items the ICU was based on seem to be indeed central to the symptoms represented by the whole scale.   
  
  The focus on CU traits for early signs of psychopathy with the hope to designate an important yet small subgroup of what might one day become severe, violent and chronic offenders cannot be corroborated by severe measurement issues. 
  A low noise to signal ratio ratio makes a fine tuned assessment tool a necessity. 
@@ -299,7 +288,7 @@ Especially gender is repeatedly mentioned as a moderating variable of influence 
  Measurement invariance tests comparing the factor structure of translations in a homogeneous population (ideally randomized bilingual individuals) might shed further light on the issue.
  Similarly, measurement invariance should be assessed in a sample that has been presented the scale in fixed vs. random item oder to further evaluate the influence of item order.
  Regarding the common critique of the "unemotional" facet  future studies should explicitly assess ASD as well as mood disorders to quantify the amount of variance attributable to internalizing disorders.
- As far as the clinical practice is concerned those ... are likely eliminated anyways. \todo{continue argument}. 
+ As far as the clinical practice is concerned those diagnoses are likely thoroughly probed for differential diagnosis anyways. 
  Nevertheless, it has to be kept in mind that the wording of the ICU focuses on the suppression of emotional expression and hence likely underestimates other aspects of unemotionality potentially even more relevant in the context of psychopathy.
  
  With regards to the assessment of the LPE specifier the present findings suggest that the four facets are neither equivalent regarding the internal structure nor their relationship to behavioral covariates. Findings obtained with the three dimensional subscale structure translate to the subscale structure more closely resembling the four LPE facets.

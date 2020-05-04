@@ -1,0 +1,215 @@
+anna@nash:~/Dropbox/anna/projects/ICUmultinet$ tree
+.
+├── analysis
+│   ├── data
+│   │   ├── data_imp.RSD
+│   │   ├── dat_imp.RSD
+│   │   ├── derived_data
+│   │   ├── DO-NOT-EDIT-ANY-FILES-IN-HERE-BY-HAND
+│   │   └── raw_data
+│   │       ├── FSozU.preIMP.sav
+│   │       └── ICU_selected_raw.sav
+│   ├── figures
+│   │   ├── communities.pdf
+│   │   ├── communities.png
+│   │   ├── flowchart.png
+│   │   ├── ICU_network2.pdf
+│   │   ├── ICU_network.pdf
+│   │   ├── meso_plot.pdf
+│   │   ├── missingness.pdf
+│   │   ├── multiverse_nets_10.pdf
+│   │   ├── multiverse_nets_11.pdf
+│   │   ├── multiverse_nets_12.pdf
+│   │   ├── multiverse_nets_13.pdf
+│   │   ├── multiverse_nets_14.pdf
+│   │   ├── multiverse_nets_15.pdf
+│   │   ├── multiverse_nets_16.pdf
+│   │   ├── multiverse_nets_18.pdf
+│   │   ├── multiverse_nets_19.pdf
+│   │   ├── multiverse_nets_1.pdf
+│   │   ├── multiverse_nets_20.pdf
+│   │   ├── multiverse_nets_23.pdf
+│   │   ├── multiverse_nets_24.pdf
+│   │   ├── multiverse_nets_25.pdf
+│   │   ├── multiverse_nets_26.pdf
+│   │   ├── multiverse_nets_2.pdf
+│   │   ├── multiverse_nets_3.pdf
+│   │   ├── multiverse_nets_4.pdf
+│   │   ├── multiverse_nets_5.pdf
+│   │   ├── multiverse_nets_6.pdf
+│   │   ├── multiverse_nets_7.pdf
+│   │   ├── multiverse_nets_8.pdf
+│   │   ├── multiverse_nets_9.pdf
+│   │   ├── multiverse_nets_cov_10.pdf
+│   │   ├── multiverse_nets_cov_11.pdf
+│   │   ├── multiverse_nets_cov_12.pdf
+│   │   ├── multiverse_nets_cov_13.pdf
+│   │   ├── multiverse_nets_cov_14.pdf
+│   │   ├── multiverse_nets_cov_15.pdf
+│   │   ├── multiverse_nets_cov_16.pdf
+│   │   ├── multiverse_nets_cov_17.pdf
+│   │   ├── multiverse_nets_cov_18.pdf
+│   │   ├── multiverse_nets_cov_19.pdf
+│   │   ├── multiverse_nets_cov_1.pdf
+│   │   ├── multiverse_nets_cov_20.pdf
+│   │   ├── multiverse_nets_cov_23.pdf
+│   │   ├── multiverse_nets_cov_24.pdf
+│   │   ├── multiverse_nets_cov_25.pdf
+│   │   ├── multiverse_nets_cov_26.pdf
+│   │   ├── multiverse_nets_cov_2.pdf
+│   │   ├── multiverse_nets_cov_3.pdf
+│   │   ├── multiverse_nets_cov_4.pdf
+│   │   ├── multiverse_nets_cov_5.pdf
+│   │   ├── multiverse_nets_cov_6.pdf
+│   │   ├── multiverse_nets_cov_7.pdf
+│   │   ├── multiverse_nets_cov_8.pdf
+│   │   ├── multiverse_nets_cov_9.pdf
+│   │   ├── multiverse.png
+│   │   ├── node_centrality_icu.pdf
+│   │   ├── node_influence.pdf
+│   │   └── Rplot.pdf
+│   ├── manuscript
+│   │   ├── 00a_titlepage.log
+│   │   ├── 00a_titlepage.tex
+│   │   ├── 00b_abstract.Rnw
+│   │   ├── 00_main.acn
+│   │   ├── 00_main.acr
+│   │   ├── 00_main.alg
+│   │   ├── 00_main.aux
+│   │   ├── 00_main.bbl
+│   │   ├── 00_main.bcf
+│   │   ├── 00_main.blg
+│   │   ├── 00_main-concordance.tex
+│   │   ├── 00_main.ist
+│   │   ├── 00_main.lof
+│   │   ├── 00_main.log
+│   │   ├── 00_main.lot
+│   │   ├── 00_main.out
+│   │   ├── 00_main.pdf
+│   │   ├── 00_main.Rnw
+│   │   ├── 00_main.run.xml
+│   │   ├── 00_main.synctex.gz
+│   │   ├── 00_main.tex
+│   │   ├── 00_main.toc
+│   │   ├── 01_introduction.tex
+│   │   ├── 02_theory.log
+│   │   ├── 02_theory.tex
+│   │   ├── 03_methods.bbl
+│   │   ├── 03_methods.blg
+│   │   ├── 03_methods.Rnw
+│   │   ├── 03_methods.tex
+│   │   ├── 04_results.Rnw
+│   │   ├── 04_results.tex
+│   │   ├── 05_discussion.tex
+│   │   ├── 06_supplements.Rnw
+│   │   ├── appendix.tex
+│   │   ├── archive
+│   │   │   ├── 00b_abstract.tex
+│   │   │   ├── 00_main.tex
+│   │   │   └── deprecated_constructs.tex
+│   │   ├── biblatex_bib.bib
+│   │   ├── demographics.RData
+│   │   ├── flowchart.mmap
+│   │   ├── import_to_sweave.R
+│   │   ├── list_of_abbreviations.tex
+│   │   ├── manuscript.docx
+│   │   ├── manuscript.Rmd
+│   │   ├── multiverse.mmap
+│   │   ├── network_descriptives_icu.RData
+│   │   ├── table_of_contents.tex
+│   │   └── table_of_figures.tex
+│   └── templates
+│       ├── author-info-blocks.lua
+│       ├── journal-of-archaeological-science.csl
+│       ├── pagebreak.lua
+│       ├── scholarly-metadata.lua
+│       ├── template.docx
+│       └── template.Rmd
+├── CONDUCT.md
+├── CONTRIBUTING.md
+├── DESCRIPTION
+├── ICUmultinet.Rproj
+├── icu_pre_imp.RDS
+├── LICENSE
+├── license.txt
+├── NAMESPACE
+├── R
+│   ├── bootnet_huge.R
+│   ├── bridge.R
+│   ├── code_book.Rmd
+│   ├── community_detection.R
+│   ├── covariate_network.R
+│   ├── dependencies.R
+│   ├── deprecated
+│   ├── desciptives.R
+│   ├── dump
+│   ├── dump.R
+│   ├── edge_plot.R
+│   ├── helper_functions.R
+│   ├── import_and_cleaning.R
+│   ├── import_cov_network.R
+│   ├── import_icu_networks.R
+│   ├── imputation.R
+│   ├── local_plot.R
+│   ├── more_plots.R
+│   ├── multiverse_definition.R
+│   ├── network_analysis.R
+│   ├── network_descriptives.R
+│   ├── node_indices_potting.R
+│   ├── plot_graph.R
+│   ├── plotting.R
+│   └── utils.R
+├── README.md
+├── README.Rmd
+└── tmp
+    ├── bootnet_10.rds
+    ├── bootnet_11.rds
+    ├── bootnet_12.rds
+    ├── bootnet_13.rds
+    ├── bootnet_14.rds
+    ├── bootnet_15.rds
+    ├── bootnet_16.rds
+    ├── bootnet_17.rds
+    ├── bootnet_18.rds
+    ├── bootnet_19.rds
+    ├── bootnet_1.rds
+    ├── bootnet_20.rds
+    ├── bootnet_23.rds
+    ├── bootnet_24.rds
+    ├── bootnet_25.rds
+    ├── bootnet_26.rds
+    ├── bootnet_2.rds
+    ├── bootnet_3.rds
+    ├── bootnet_4.rds
+    ├── bootnet_5.rds
+    ├── bootnet_6.rds
+    ├── bootnet_7.rds
+    ├── bootnet_8.rds
+    ├── bootnet_9.rds
+    ├── bootnet_cov_10.rds
+    ├── bootnet_cov_11.rds
+    ├── bootnet_cov_12.rds
+    ├── bootnet_cov_13.rds
+    ├── bootnet_cov_14.rds
+    ├── bootnet_cov_15.rds
+    ├── bootnet_cov_16.rds
+    ├── bootnet_cov_17.rds
+    ├── bootnet_cov_18.rds
+    ├── bootnet_cov_19.rds
+    ├── bootnet_cov_1.rds
+    ├── bootnet_cov_20.rds
+    ├── bootnet_cov_23.rds
+    ├── bootnet_cov_24.rds
+    ├── bootnet_cov_25.rds
+    ├── bootnet_cov_26.rds
+    ├── bootnet_cov_2.rds
+    ├── bootnet_cov_3.rds
+    ├── bootnet_cov_4.rds
+    ├── bootnet_cov_5.rds
+    ├── bootnet_cov_6.rds
+    ├── bootnet_cov_7.rds
+    ├── bootnet_cov_8.rds
+    └── bootnet_cov_9.rds
+
+12 directories, 198 files
+

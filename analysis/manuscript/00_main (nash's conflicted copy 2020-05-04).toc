@@ -1,0 +1,180 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {american}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{List of Abbreviations}{5}{section*.4}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduction}{7}{section.1}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Theoretical Background}{8}{section.2}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Callous Unemotional Traits}{8}{subsection.2.1}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.1}Assessment of CU Traits}{9}{subsubsection.2.1.1}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Psychopathy Checklist - Youth version}{10}{section*.8}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Youth Psychopathic Traits Inventory}{10}{section*.9}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Antisocial Process screening device}{10}{section*.10}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Inventory of Callous-Unemotional traits}{10}{section*.11}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Psychometric Properties of the ICU}{11}{subsection.2.2}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.1}Dimensionality}{11}{subsubsection.2.2.1}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.2}Validity}{13}{subsubsection.2.2.2}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.3}Problematic Items}{13}{subsubsection.2.2.3}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.4}German Translation}{14}{subsubsection.2.2.4}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.5}Role of the ICU in the Revision of the DSM}{14}{subsubsection.2.2.5}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Psychological Network Analysis}{14}{subsection.2.3}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}Common cause theory}{14}{subsection.2.4}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5}Network theory}{15}{subsection.2.5}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6}Psychological Network analysis}{15}{subsection.2.6}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.6.1}Network Psychometrics}{16}{subsubsection.2.6.1}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.6.2}Parallels of Psychological network analysis and Structural equation modeling}{16}{subsubsection.2.6.2}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.6.3}Present Applications of Network Theory to CU Traits and Psychopathy}{17}{subsubsection.2.6.3}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.7}Multi-verse Analysis}{17}{subsection.2.7}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.8}Research Questions}{18}{subsection.2.8}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Methods}{19}{section.3}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Participants and Procedures}{19}{subsection.3.1}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.1}Sampling Procedure}{19}{subsubsection.3.1.1}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.2}Survey Setting}{21}{subsubsection.3.1.2}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.3}Sample Descriptives}{21}{subsubsection.3.1.3}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Measures}{21}{subsection.3.2}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.2.1}Callous-Unemotional Traits}{21}{subsubsection.3.2.1}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Data Analysis}{21}{section.4}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Data Processing and Cleaning}{22}{subsection.4.1}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Missing Data Handling}{22}{subsection.4.2}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Data Preparation for Network Analysis}{22}{subsection.4.3}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4}Descriptive Statistics}{23}{subsection.4.4}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5}Network Estimation}{23}{subsection.4.5}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Data Transformation}{26}{section*.15}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Modeling Approach}{26}{section*.16}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Network Sparsity}{26}{section*.17}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.6}Psychometric Network}{27}{subsection.4.6}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Edge Estimation}{27}{section*.18}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Node Statistics}{27}{section*.19}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Community Detection}{28}{section*.20}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Bridge Nodes and Within Community Centrality}{28}{section*.21}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Results}{28}{section.5}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Missing Data Analysis}{28}{subsection.5.1}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Descriptive Statistics}{28}{subsection.5.2}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Scale and Item Characteristics}{30}{section*.23}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3}Estimation Problems}{30}{subsection.5.3}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4}Psychometric Network Analysis}{31}{subsection.5.4}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.4.1}Network Description}{31}{subsubsection.5.4.1}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.4.2}Network Structure}{31}{subsubsection.5.4.2}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Edge Weights}{31}{section*.24}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.4.3}Node Centrality}{32}{subsubsection.5.4.3}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Community Indices}{34}{section*.27}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.4.4}Dimensionality}{34}{subsubsection.5.4.4}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Community detection}{34}{section*.29}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Discussion}{35}{section.6}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}Influence of modeling decisions - Multi-verse approach}{35}{subsection.6.1}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2}Psychometric network of ICU items}{36}{subsection.6.2}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.1}Network edges}{36}{subsubsection.6.2.1}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.2}Node centrality}{37}{subsubsection.6.2.2}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.3}Dimensionality}{39}{subsubsection.6.2.3}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3}Limitations}{39}{subsection.6.3}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.3.1}Measurement related limitations}{39}{subsubsection.6.3.1}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.3.2}Limitations regarding Sample Population and Study Design}{40}{subsubsection.6.3.2}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.3.3}Methodological Limitations}{40}{subsubsection.6.3.3}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.3.4}Theoretical limitations}{41}{subsubsection.6.3.4}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4}Conclusions}{42}{subsection.6.4}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.5}Implications for theory and practice}{43}{subsection.6.5}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A}Questionnaires and items}{51}{appendix.A}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B}Deviation from Preregistration}{52}{appendix.B}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C}Other constructs assessed in the Niedersachsensurvey}{58}{appendix.C}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {D}Analysis Code}{59}{appendix.D}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {D.1}README}{59}{subsection.D.1}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {D.1.1}.\textbackslash analysis \textbackslash data \textbackslash raw\_data\textbackslash }{59}{subsubsection.D.1.1}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {D.1.2}.\textbackslash R}{59}{subsubsection.D.1.2}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{main.R}{59}{section*.32}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{dependencies.R}{59}{section*.33}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{import\_and\_cleaning.R}{60}{section*.34}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{imputation.R}{60}{section*.35}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{descriptives.R}{60}{section*.36}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{multiverse\_definition.R}{60}{section*.37}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{psychometric\_network.R}{60}{section*.38}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{covariate\_network.R}{60}{section*.39}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{plotting.R}{60}{section*.40}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{tables.R}{60}{section*.41}\protected@file@percent 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {D.2}Reproducibility measures}{60}{subsection.D.2}\protected@file@percent 

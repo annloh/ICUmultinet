@@ -59,12 +59,12 @@ School principals were contacted for recruitment, resulting in \textit{k} = 545 
 Of the \textit{N} = 12,650 students attending the participating classrooms 84.4\% (\textit{n} = 10, 638) filled in the survey.
 Reasons for non-participation can be obtained from the flow-chart in figure \ref{fig:flowchart}.
 
-\begin{figure}[h!]
-	\caption{\label{fig:flowchart}\protect\linebreak[1]\textit{Flow Chart Illustrating  the Sampling Process}}
-		\centering
-	\includegraphics[width=\textwidth]{../figures/flowchart.png}
-	\caption*{\textit{Note.} Figure adapted from \parencite{kliem_factor_2019}.}
-\end{figure}
+	\begin{figure}[H]
+		\caption{\label{fig:flowchart}\protect\linebreak[1]\textit{Flow Chart Illustrating  the Sampling Process}}
+			\centering
+		\includegraphics[width=\textwidth]{../figures/flowchart.png}
+		\caption*{\textit{Note.} Figure adapted from \parencite{kliem_factor_2019}.}
+	\end{figure}
 
 The survey was modularized, i.e. there were different versions of the survey randomly assigned to the participants.
 The ICU was only part of 1/3 of the distributed survey forms.
@@ -153,17 +153,17 @@ This procedure did not indicate any considerable item overlap.
 
 \subsection{Descriptive Statistics}
 Descriptives statistics were computed for all demographic variables.
-Basic psychometric scale characteristics were be computed for the ICU scale (item mean, inter-item correlations, item difficulty, item-rest correlations).
+Basic psychometric scale characteristics were computed for the ICU scale (item mean, item-rest correlations).
 Correlations on subscale level are furthermore reported.
 
 
 \subsection{Network Estimation}
 
 Psychological network analysis is a fairly recent technique with a multitude of current methodological developments.
-To incorporate the effects of several potentially applicable analytical decisions I conducted a multi-verse analysis. 
+To incorporate the effects of several potentially applicable analytical decisions I conducted a multi-verse analysis \parencite{steegen_increasing_2016}. 
 Table \ref{tab:decisions} contains an overview of the decisions and their corresponding options which are likely to be justifiable given the data at hand.
 
-\todo{fix table formatting}
+\begin{table}
 
 \begin{ThreePartTable}
 	\begin{TableNotes}
@@ -192,18 +192,20 @@ Table \ref{tab:decisions} contains an overview of the decisions and their corres
 \insertTableNotes 
 \end{longtabu}
 \end{ThreePartTable}
+\end{table}
 
 		The modeling decisions in table \ref{tab:decisions} above will be combined in as many ways as feasible.
 		However, the current implementation of modeling techniques does not feasibly allow for a combination in a full-factorial way.
-		Specifically, the default functions of the \texttt{bootnet} package  will be used with every reasonable parameter constellation.
+		Specifically, the default functions of the \texttt{bootnet} package  \parencite{epskamp_estimating_2018} will be used with every reasonable parameter constellation.
 		Figure \ref{fig:multiverse} provides an overview of the implementation of the analytical decisions outlined above. 
 
-\begin{figure}[h!]
-	\caption{\label{fig:multiverse}\protect\linebreak[1]\textit{s}}
-	\centering
-	\includegraphics[width=\linewidth]{../figures/multiverse.png}
-%	\caption*{\textit{Note.} ICU = Inventory of Callous-Unemotional Traits.}
-\end{figure}
+	\begin{figure}[H]
+		\caption{\label{fig:multiverse}\protect\linebreak[1] 
+			Overview of implemented modeling techniques}
+		\centering
+		\includegraphics[width=\linewidth]{../figures/multiverse.png}
+	%	\caption*{\textit{Note.} ICU = Inventory of Callous-Unemotional Traits.}
+	\end{figure}
 
 		We will now  provide a detailed justification of each step in the analysis process explaining the necessary decisions to be made as well as the options available:
 
@@ -212,29 +214,29 @@ Table \ref{tab:decisions} contains an overview of the decisions and their corres
 		As there are currently no clear guidelines regarding this transformation we will repeat each of the analyses with untransformed variables. %check that
 
 \paragraph{Modeling Approach}
-		The networks can be modeled using either Gaussian Graphical Models (GGM) or Mixed Graphical Models (MGM).
+		The networks can be modeled using either a \gls{ggm}  or \gls{mgm}.
 		GGMs assumes Gaussian data i.e. following a normal distribution.
 		However, given the nature of the variables investigated in the present study such distributions seem unlikely for several nodes.
 		MGMs takes the ordinal nature of the data into account by estimating the node edges using exponential mixed graphical model as introduced by Yang and colleagues \parencite*{yang_mixed_2014}. 
-		We will incorporate both modeling techniques as the 4-point scale underlying the ICU represents the idea of a continuous variable.
+		As part of the multi-verse approach have incorporated both modeling techniques as the 4-point scale underlying the ICU represents the idea of a continuous variable.
 
 		\paragraph{Network Sparsity} To avoid the estimation of spurious edges and thereby overfitting the network to the data and increase the risk of false positives, network edges are often estimated using regularization.
 		Regularization shrinks edges and sets small edges to zero, producing a sparse and parsimonious model.
 		For the estimation of GGM the application of the graphical LASSO (GLASSO) is frequently recommended (a variant of the LASSO applicable to a correlation matrix).
-		Tuning of the shrinkage is commonly achieved choosing the model with the lowest Extended Bayesian Information Criterion (EBIC).
+		Tuning of the shrinkage is commonly achieved choosing the model with the lowest  \gls{ebic}.
 		This approach is implemented in the \texttt{qgraph} package \parencite{epskamp_qgraph_2012}.
 		The EBIC itself relies on a tuning parameter $\gamma$.
 		This tuning parameter influences the trade-off between including false-positive edges and removing true edges.
 		The hyperparameter $\gamma$ is usually set between zero and 0.5 \parencite{epskamp_tutorial_2018} with 0.5 being the most frequently chosen setting.
 		With a $\gamma$ closer to 0.5, the EBIC will favor a simpler model containing fewer edges.
 		Consequently with a $\gamma$ near zero, the more the EBIC will favor a model with more edges.
-		We will incorporate $\gamma$'s of 0, 0.25 and 0.5 as part of the intended multi-verse analysis.
+		I have incorporated $\gamma$'s of 0, 0.25 and 0.5 as part of the present multi-verse analysis.
 
 		However, there is recent methodological work indicating that the EBIC might not be the ideal information criterion for tuning the shrinkage parameter \parencite{wysocki_penalty_2019}.
-		The multiverse analysis will hence also incorporate alternative methods (i.e. RIC, StAR) for determining optimal regularization.
+		The multi-verse analysis will hence also incorporate alternative methods (i.e. gls{ric}, gls{star}) for determining optimal regularization.
 		These alternative approaches to selecting the shrinkage parameter for a GGM are implemented in the \texttt{huge} package \parencite{huge}.
 		The MGM estimation as implemented in the \texttt{mgm} package \parencite{mgm} regularizes the estimated edges via a LASSO penalty.
-		Here tuning of the penalization can be achieved via EBIC or cross-validation (CV).
+		Here tuning of the penalization can be achieved via EBIC or \gls{cv}.
 
 		Recent debate \parencite{williams_nonregularized_2019} questions the general need for regularization and argues that these techniques might only be justifiable when in deed a sparse network can be assumed to underly the data.
 		Hence following recent recommendations by Williams and colleagues \parencite{williams_nonregularized_2019} we will also estimate network models without regularization, albeit still controlling for the false-positive rate.
@@ -250,22 +252,17 @@ Table \ref{tab:decisions} contains an overview of the decisions and their corres
 		More recently the interpretability of closeness centrality and betweenness centrality have been questioned and their use discouraged.
 		Node strength, (which is the sum of all weighted edges of a given node) however, has been found to be akin to factor loadings.
 		It hence offers information whether an item may belong to multiple latent dimensions.
-		The \textit{expected influence centrality} recently suggested by Robinaugh et al. \parencite*{robinaugh_identifying_2016} overcomes some of the shortcomings of other centrality measures and has been found to be strongly associated with observed node influence. 
+		The \textit{expected influence centrality} recently suggested by \textcites{robinaugh_identifying_2016} overcomes some of the shortcomings of other centrality measures and has been found to be strongly associated with observed node influence. 
 		It is computed in the same manner as node strength however maintaining the edge sign. It is hence especially useful in networks where negative edges are present.
-
+		I have hence computed both node strength as well as node expected influence, both as implementen in the \texttt{bootnet} package \parencite{epskamp_estimating_2018}.
+		
 		\paragraph{Community Detection}
-		We will use community detection algorithms to assess the dimensionality of the psychometric network.
-		Nodes within an community are more strongly interconnected than they are with nodes from other communities.
-		Various algorithms exist that identify the number of communities (i.e. dimensions) in the network.
-		Unlike edge estimation, where the implementation of different estimation methods for the same set of edges, the application of different community detection algorithm of each of the estimated networks of the multi-verse would result in a very high number of subsets which would need to be interpreted individually. We will hence only implement the spinglas algorithm for community detection in each estimated network.
-
-
-		\paragraph{Bridge Nodes and Within Cluster Centrality}
-		We will  also identify important nodes that may serve as bridges between the communities by computing the \textit{bridge expected influence index} via the \texttt{bridge()} function of the \texttt{networktools} package \parencite{networktools}.
+		A community detection algorithms was applied to all estimated adjacency matrices from the multi-verse.  The walktrap algorithm as implemented in the \texttt{igraph} package was used for this \parencite{igraph}. As community detection does not provide point estimates but items sets, this analysis was not bootstrapped for lack of pooling method of such a procedure.
+		
+		\paragraph{Bridge Nodes and Within Community Centrality}
+		I also identified important nodes that may serve as bridges between the communities by computing the \textit{bridge expected influence index} via the \texttt{bridge()} function of the \texttt{networktools} package \parencite{networktools}.
 		Bridge expected influence is the sum of the edge weights connecting a given node to all nodes in the other community or communities \parencite{jones_bridge_2019}.
-		Node Centrality measures can not only be computed with regard to the whole network, but also relative to their community.
-		Following the suggestions of Blanken and colleagues \parencite*{blanken_role_2018} we will analyse the edge weights a given node has within its community (\textit{stabilizing index}). 
-		We will use the four factors corresponding to the LPE specifier for this analysis.
+		Following the suggestions of Blanken and colleagues \parencite*{blanken_role_2018} I additionally analyses the edge weights a given node has within its community (\textit{stabilizing index}). I used the four factors corresponding to the LPE specifier for this analysis. The stabilizing index is not currently implemented in any network analysis package and was hence computed via a custom function.
 
 
 %		\subsection{Psychological Network Analysis of CU-Traits Facets and Anti-Social Behavior}
